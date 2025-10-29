@@ -2,7 +2,7 @@ Original site:
 https://dagsdeli.com/ 
 
 New site:
-
+webdevg3.vercel.app (still need to deploy)
 
 Improvements:
 
