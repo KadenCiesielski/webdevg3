@@ -781,3 +781,127 @@ h2.body-title {
 .aboutmenu-btn:hover {
   transform: scale(0.95); 
 }
+
+/* findUs.html css */
+
+.contact-section {
+  background: linear-gradient(145deg, #000, #0a0a0a);
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.6);
+  color: #f5f5f5;
+  padding: 60px 20px;
+  font-family: "Poppins", Arial, sans-serif;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.touch-hdr {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 70px;
+}
+
+.findUs-msg {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 50px;
+  color: white;
+  margin-bottom: 24px;
+}
+
+/* Input Fields */
+.contact-section .w3-input,
+.contact-section .w3-textarea {
+  background: #ffffff;
+  border-color: #333;
+  color: #000; /* user-typed text */
+  border-radius: 12px;
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-section .w3-input::placeholder,
+.contact-section .w3-textarea::placeholder {
+  color: #555; /* placeholder gray */
+  opacity: 1;
+}
+
+/* Cards */
+.w3-card-4 {
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  padding: 32px;
+  border: 2px solid #f44336; /* red border */
+}
+
+.contact-section .w3-third .w3-card-4 {
+  background: linear-gradient(145deg, #141414, #1b1b1b);
+}
+
+.contact-section .w3-twothird .w3-card-4 {
+  background: linear-gradient(145deg, #1b1b1b, #262626);
+}
+
+/* Buttons */
+.find-btn {
+  background: linear-gradient(to right, #f44336, #a00);
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 12px;
+  padding: 12px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.find-btn:hover {
+  transform: scale(0.95);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Horizontal line */
+.w3-border-dark-grey {
+  border-color: #444 !important;
+  margin: 20px auto;
+  width: 60%;
+}
+
+/* Text & Links */
+.w3-text-light-grey {
+  color: #ccc !important;
+}
+
+.w3-text-red {
+  color: #f44336 !important;
+}
+
+.w3-hover-text-white:hover {
+  color: #fff !important;
+}
+
+/* Centered gradient separator under headers */
+.contact-section .separator {
+  margin: auto;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, #f44336, #a00);
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.contact-icon {
+  color: #f44336;
+}
+
+/* Make the textarea only grow vertically */
+.vertical-textarea {
+  resize: vertical !important; /* only vertical resize */
+  overflow-x: hidden !important; /* hide horizontal scrollbar */
+  white-space: pre-wrap !important; /* wrap long lines */
+  word-wrap: break-word !important; /* break long words */
+  width: 100% !important; /* ensure width stays fixed */
+  box-sizing: border-box; /* include padding/border in width */
+}
+
+.find-email {
+  text-decoration: none;
+}
