@@ -198,7 +198,6 @@ h6 {
 }
 
 .subs-bread-item {
-  background: linear-gradient(135deg, #fff8e1, #fffde7);
   border-radius: 25px;
   padding: 12px 24px;
   font-size: 1.1em;
@@ -215,7 +214,6 @@ h6 {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(245, 124, 0, 0.25);
   border-color: #e65100;
-  background: linear-gradient(135deg, #fff3e0, #ffecb3);
 }
 
 .subs-bread-item:before {
@@ -239,7 +237,6 @@ h6 {
 }
 
 .subs-topping-item {
-  background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
   border-radius: 25px;
   padding: 12px 24px;
   font-size: 1.1em;
@@ -258,7 +255,6 @@ h6 {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(76, 175, 80, 0.25);
   border-color: #388e3c;
-  background: linear-gradient(135deg, #c8e6c9, #dcedc8);
 }
 
 .subs-topping-item:before {
@@ -282,12 +278,11 @@ h6 {
 }
 
 .subs-condiment-item {
-  background: linear-gradient(135deg, #fff3e0, #fff8e1);
   border-radius: 25px;
   padding: 12px 24px;
   font-size: 1.1em;
   font-weight: 500;
-  border: 2px solid #ff9800;
+  border: 2px solid #0059ff;
   box-shadow: 0 4px 12px rgba(255, 152, 0, 0.15);
   transition: all 0.3s ease;
   cursor: pointer;
@@ -300,8 +295,7 @@ h6 {
 .subs-condiment-item:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(255, 152, 0, 0.25);
-  border-color: #f57c00;
-  background: linear-gradient(135deg, #ffe0b2, #ffecb3);
+  border-color: #0059ff;
 }
 
 .subs-condiment-item:before {
@@ -325,7 +319,6 @@ h6 {
 }
 
 .subs-addition-item {
-  background: linear-gradient(135deg, #ede7f6, #f3e5f5);
   border-radius: 25px;
   padding: 12px 24px;
   font-size: 1.1em;
@@ -368,7 +361,6 @@ h6 {
 }
 
 .subs-sandwich-item {
-  background: linear-gradient(135deg, #fff9c4, #fffde7);
   border-radius: 25px;
   padding: 14px 28px;
   font-size: 1.1em;
@@ -389,7 +381,6 @@ h6 {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(255, 193, 7, 0.25);
   border-color: #ff8f00;
-  background: linear-gradient(135deg, #fff176, #ffeb3b);
 }
 
 .subs-sandwich-item:before {
@@ -413,7 +404,6 @@ h6 {
 }
 
 .subs-sandwich-item-large {
-  background: linear-gradient(135deg, #fff59d, #fff8e1);
   border-radius: 28px;
   padding: 16px 32px;
   font-size: 1.15em;
@@ -435,7 +425,6 @@ h6 {
   transform: translateY(-3px);
   box-shadow: 0 8px 24px rgba(255, 179, 0, 0.3);
   border-color: #ff6f00;
-  background: linear-gradient(135deg, #ffcc02, #ffeb3b);
 }
 
 .subs-sandwich-item-large:before {
