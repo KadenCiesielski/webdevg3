@@ -739,3 +739,45 @@ html {
     max-width: 100%;
   }
 }
+
+/* about.html css */
+
+.w3-large {
+  color: #ccc;
+}
+
+h1.about-txt {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 100px;
+  text-align: center;
+  height: 200px;
+}
+
+h2.body-title {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 80px;
+}
+
+.main-str {
+  width: 100%;
+  background-color: #000;
+}
+
+.line-spacing {
+  line-height: 1.6;
+}
+
+.bottom-hdr {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 70px;
+}
+
+.aboutmenu-btn {
+  font-size: 20px; 
+  padding: 16px 40px; 
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.aboutmenu-btn:hover {
+  transform: scale(0.95); 
+}
