@@ -7,29 +7,9 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
+      href="https://fonts.googleapis.com/css?family=Amatic+SC"
     />
-    <style>
-      body,
-      html {
-        height: 100%;
-      }
-      body,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-family: "Montserrat", "Amatic SC", sans-serif;
-      }
-      .bgimg {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-image: url("assets/Heatbg.png");
-        min-height: 90%;
-      }
-    </style>
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <!-- Navbar (sit on top) -->
@@ -37,189 +17,198 @@
       <div
         class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off"
         id="myNavbar"
+        style="display: flex; justify-content: center"
       >
         <a
-          href="#"
+          href="index.html"
           class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
           >Home</a
         >
         <a
-          href="#"
+          href="about.html"
           class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
           >About</a
         >
         <a
-          href="#"
+          href="menus.html"
           class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
           >Menus</a
         >
         <a
-          href="#"
+          href="gallery.html"
           class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
           >Gallery</a
         >
         <a
-          href="#"
+          href="contact.html"
           class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
           >Contact</a
         >
         <a
-          href="#"
+          href="findus.html"
           class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
           >Find Us</a
         >
         <a
-          href="#"
+          href="apply.html"
           class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
           >Apply For A Job</a
         >
       </div>
     </div>
 
+    <!-- Hamburger Toggle Button (mobile only) -->
+    <button
+      class="menu-toggle"
+      aria-controls="smallMenu"
+      aria-expanded="false"
+      onclick="toggleMenu()"
+      style="position: fixed; top: 12px; left: 18px; z-index: 1001"
+    >
+      <span class="hamburger-icon"></span>
+      <span class="hamburger-icon"></span>
+      <span class="hamburger-icon"></span>
+    </button>
+    <!-- Collapsible Mobile Menu -->
+    <div
+      id="smallMenu"
+      class="w3-bar-block w3-light-gray w3-hide w3-hide-medium w3-hide-large w3-center"
+      aria-hidden="true"
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1000;
+        overflow-y: auto;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.13);
+      "
+    >
+      <a
+        href="index.html"
+        class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
+        >Home</a
+      >
+      <a
+        href="about.html"
+        class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
+        >About</a
+      >
+      <a
+        href="menus.html"
+        class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
+        >Menus</a
+      >
+      <a
+        href="gallery.html"
+        class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
+        >Gallery</a
+      >
+      <a
+        href="contact.html"
+        class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
+        >Contact</a
+      >
+      <a
+        href="findus.html"
+        class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
+        >Find Us</a
+      >
+      <a
+        href="apply.html"
+        class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
+        >Apply For A Job</a
+      >
+    </div>
     <!-- Header with image -->
     <header class="bgimg w3-display-container w3-grayscale-min" id="home">
-      <div class="w3-display-bottomleft w3-padding">
-        <span class="w3-tag w3-xlarge">Open from 10am to 12pm</span>
-      </div>
       <div class="w3-display-middle w3-center">
-        <span class="w3-text-white w3-hide-small" style="font-size: 140px"
-          >HEAT &amp; SERVE</span
+        <span class="w3-text-white w3-hide-small menus-main-title"
+          >Heat N Serve</span
         >
 
-        <p>
-          <button
-            class="w3-button w3-white w3-border w3-border-red w3-round-large"
-            style="font-size: 2.9em; padding: 24px 64px"
+        <!-- Menu Navigation Buttons -->
+        <div class="w3-row w3-center menus-button-row">
+          <div
+            class="w3-col s12 w3-padding-large w3-center menus-button-container"
           >
-            See Heat &amp; Serve Menu
-          </button>
-        </p>
-      </div>
-    </header>
-
-    <!-- Heat N Serve Menu Container -->
-    <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
-      <div class="w3-content" style="max-width: 1500px">
-        <div class="w3-row w3-center w3-border w3-border-dark-grey">
-          <div class="w3-col s12 w3-padding-large">
             <a href="Subs.html">
               <button
-                class="w3-button w3-white w3-border w3-border-red w3-round-large"
+                class="w3-button w3-white w3-border w3-border-red w3-round-large w3-red menus-large-button-xl"
               >
                 Subs And Sandwiches
               </button>
             </a>
             <a href="PartyPlatter.html">
               <button
-                class="w3-button w3-white w3-border w3-border-red w3-round-large"
+                class="w3-button w3-white w3-border w3-border-red w3-round-large menus-large-button"
               >
                 Party Platters
               </button>
             </a>
             <a href="HeatNServe.html">
               <button
-                class="w3-button w3-white w3-border w3-border-red w3-round-large w3-red"
+                class="w3-button w3-white w3-border w3-border-red w3-round-large menus-large-button-wide"
               >
                 Heat N Serve
               </button>
             </a>
           </div>
         </div>
-        <div class="w3-container w3-padding-32 w3-white" style="font-size:1.2em; color:#222;">
-          <h2 class="w3-text-dark-grey" style="letter-spacing:1px;">
-            <span class="subs-emoji">🍝</span> Entrees
-          </h2>
-          <ul class="w3-ul" style="line-height:1.7;">
-            <li>
-              <b>Homestyle Meat Lasagna</b> — Layers of pasta, seasoned beef,
-              ricotta, mozzarella, and marinara sauce.
-              <span class="w3-right w3-tag w3-dark-grey w3-round" style="font-size:1em;">$54.99</span>
-            </li>
-            <li>
-              <b>Eggplant Parmesan</b> — Breaded eggplant baked with marinara
-              and mozzarella.
-              <span class="w3-right w3-tag w3-dark-grey w3-round" style="font-size:1em;">$49.99</span>
-            </li>
-            <li>
-              <b>Stuffed Shells</b> — Jumbo pasta shells stuffed with ricotta
-              and herbs, topped with marinara and mozzarella.
-              <span class="w3-right w3-tag w3-dark-grey w3-round" style="font-size:1em;">$44.99</span>
-            </li>
-          </ul>
-          <hr />
-          <h2 class="w3-text-dark-grey" style="letter-spacing:1px;">
-            <span class="subs-emoji">🥗</span> Sides
-          </h2>
-          <ul class="w3-ul" style="line-height:1.7;">
-            <li>
-              <b>Roasted Vegetables</b> — Seasonal vegetables roasted with olive
-              oil and herbs.
-              <span class="w3-right w3-tag w3-dark-grey w3-round" style="font-size:1em;">$29.99</span>
-            </li>
-            <li>
-              <b>Herb Roasted Potatoes</b> — Red potatoes roasted with garlic
-              and rosemary.
-              <span class="w3-right w3-tag w3-dark-grey w3-round" style="font-size:1em;">$19.99</span>
-            </li>
-          </ul>
-          <hr />
-          <h2 class="w3-text-dark-grey" style="letter-spacing:1px;">
-            <span class="subs-emoji">🍪</span> Desserts
-          </h2>
-          <ul class="w3-ul" style="line-height:1.7;">
-            <li>
-              <b>Chocolate Chip Cookie Platter</b> — Freshly baked chocolate
-              chip cookies.
-              <span class="w3-right w3-tag w3-dark-grey w3-round" style="font-size:1em;">$19.99</span>
-            </li>
-            <li>
-              <b>Brownie Tray</b> — Fudgy brownies cut into bite-sized squares.
-              <span class="w3-right w3-tag w3-dark-grey w3-round" style="font-size:1em;">$22.99</span>
-            </li>
-          </ul>
-          <hr />
-          <h2 class="w3-text-dark-grey" style="font-size:2em; text-align:center; margin-top:40px; letter-spacing:1px;">
+      </div>
+    </header>
+          <h2 class="w3-text-dark-grey heat-serve-section-title">
             Heat &amp; Serve Trays
           </h2>
-          <div class="w3-row-padding" style="margin-top:24px;">
+          <div class="w3-row-padding">
             <div class="w3-half w3-margin-bottom">
-              <div class="w3-card w3-padding" style="border-radius:16px; background:#f9f9f9;">
-                <h3 class="w3-text-red" style="font-weight:bold;">Lasagna</h3>
-                <ul class="w3-ul w3-small" style="line-height:1.6;">
+              <div class="w3-card w3-padding heat-serve-tray-card">
+                <h3 class="w3-text-red heat-serve-tray-title">Lasagna</h3>
+                <ul class="w3-ul w3-small heat-serve-tray-list">
                   <li>1/2 Tray - Serves 12</li>
                   <li>Full Tray - Serves 24</li>
                 </ul>
-                <h3 class="w3-text-red" style="font-weight:bold;">Meatball</h3>
-                <ul class="w3-ul w3-small" style="line-height:1.6;">
+                <h3 class="w3-text-red heat-serve-tray-title">Meatball</h3>
+                <ul class="w3-ul w3-small heat-serve-tray-list">
                   <li>1/2 Tray - Serves 12</li>
                   <li>Full Tray - Serves 24</li>
                 </ul>
-                <h3 class="w3-text-red" style="font-weight:bold;">Chicken Parmesan</h3>
-                <ul class="w3-ul w3-small" style="line-height:1.6;">
+                <h3 class="w3-text-red heat-serve-tray-title">
+                  Chicken Parmesan
+                </h3>
+                <ul class="w3-ul w3-small heat-serve-tray-list">
                   <li>1/2 Tray - Serves 12</li>
                   <li>Full Tray - Serves 24</li>
                 </ul>
-                <h3 class="w3-text-red" style="font-weight:bold;">Chicken Broccoli Ziti</h3>
-                <ul class="w3-ul w3-small" style="line-height:1.6;">
+                <h3 class="w3-text-red heat-serve-tray-title">
+                  Chicken Broccoli Ziti
+                </h3>
+                <ul class="w3-ul w3-small heat-serve-tray-list">
                   <li>1/2 Tray - Serves 12</li>
                   <li>Full Tray - Serves 24</li>
                 </ul>
               </div>
             </div>
             <div class="w3-half w3-margin-bottom">
-              <div class="w3-card w3-padding" style="border-radius:16px; background:#f9f9f9;">
-                <h3 class="w3-text-red" style="font-weight:bold;">Antipasto</h3>
-                <ul class="w3-ul w3-small" style="line-height:1.6;">
+              <div class="w3-card w3-padding heat-serve-tray-card">
+                <h3 class="w3-text-red heat-serve-tray-title">Antipasto</h3>
+                <ul class="w3-ul w3-small heat-serve-tray-list">
                   <li>Serves 8-10</li>
                   <li>Serves 12-16</li>
                   <li>Serves 20-25</li>
                 </ul>
-                <h3 class="w3-text-red" style="font-weight:bold;">Finger Sandwiches</h3>
-                <ul class="w3-ul w3-small" style="line-height:1.6;">
-                  <li>Assorted Salads: Chicken Salad, Seafood Salad, Tuna Salad, Egg Salad</li>
+                <h3 class="w3-text-red heat-serve-tray-title">
+                  Finger Sandwiches
+                </h3>
+                <ul class="w3-ul w3-small heat-serve-tray-list">
+                  <li>
+                    Assorted Salads: Chicken Salad, Seafood Salad, Tuna Salad,
+                    Egg Salad
+                  </li>
                 </ul>
-                <h3 class="w3-text-red" style="font-weight:bold;">Cold Cuts</h3>
-                <ul class="w3-ul w3-small" style="line-height:1.6;">
+                <h3 class="w3-text-red heat-serve-tray-title">Cold Cuts</h3>
+                <ul class="w3-ul w3-small heat-serve-tray-list">
                   <li>Ham &amp; Cheese</li>
                   <li>Roast Beef</li>
                   <li>Turkey</li>
@@ -228,11 +217,14 @@
             </div>
           </div>
           <hr />
+        </div>
+      </div>
+    </div>
+
     <!-- Add the map image here, just above the footer -->
     <img
       src="assets/mapdfgd.png"
-      class="w3-image w3-greyscale"
-      style="width: 100%"
+      class="w3-image w3-greyscale heat-serve-map-image"
       alt="Map"
     />
 

@@ -9,229 +9,267 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Amatic+SC"
     />
-    <style>
-      body,
-      html {
-        height: 100%;
-      }
-      body,
-      h1,
-      /* h2, */
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-family: "Amatic SC", sans-serif;
-      }
-      .bgimg {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-image: url("assets/Heatbg.png");
-        min-height: 90%;
-      }
-    </style>
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
-  <body>
+ <body>
     <!-- Navbar (sit on top) -->
     <div class="w3-top w3-hide-small">
       <div
         class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off"
         id="myNavbar"
+        style="display: flex; justify-content: center"
       >
         <a
-          href="#"
+          href="index.html"
           class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
           >Home</a
         >
         <a
-          href="#"
+          href="about.html"
           class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
           >About</a
         >
         <a
-          href="#"
+          href="menus.html"
           class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
           >Menus</a
         >
         <a
-          href="#"
+          href="gallery.html"
           class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
           >Gallery</a
         >
         <a
-          href="#"
+          href="contact.html"
           class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
           >Contact</a
         >
         <a
-          href="#"
+          href="findus.html"
           class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
           >Find Us</a
         >
         <a
-          href="#"
+          href="apply.html"
           class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
           >Apply For A Job</a
         >
       </div>
     </div>
 
+    <!-- Hamburger Toggle Button (mobile only) -->
+    <button
+      class="menu-toggle"
+      aria-controls="smallMenu"
+      aria-expanded="false"
+      onclick="toggleMenu()"
+      style="position: fixed; top: 12px; left: 18px; z-index: 1001"
+    >
+      <span class="hamburger-icon"></span>
+      <span class="hamburger-icon"></span>
+      <span class="hamburger-icon"></span>
+    </button>
+    <!-- Collapsible Mobile Menu -->
+    <div
+      id="smallMenu"
+      class="w3-bar-block w3-light-gray w3-hide w3-hide-medium w3-hide-large w3-center"
+      aria-hidden="true"
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1000;
+        overflow-y: auto;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.13);
+      "
+    >
+      <a
+        href="index.html"
+        class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
+        >Home</a
+      >
+      <a
+        href="about.html"
+        class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
+        >About</a
+      >
+      <a
+        href="menus.html"
+        class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
+        >Menus</a
+      >
+      <a
+        href="gallery.html"
+        class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
+        >Gallery</a
+      >
+      <a
+        href="contact.html"
+        class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
+        >Contact</a
+      >
+      <a
+        href="findus.html"
+        class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
+        >Find Us</a
+      >
+      <a
+        href="apply.html"
+        class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
+        >Apply For A Job</a
+      >
+    </div>
     <!-- Header with image -->
     <header class="bgimg w3-display-container w3-grayscale-min" id="home">
-      <div class="w3-display-bottomleft w3-padding">
-        <span class="w3-tag w3-xlarge">Open from 10am to 12pm</span>
-      </div>
       <div class="w3-display-middle w3-center">
-        <span class="w3-text-white w3-hide-small" style="font-size: 140px"
-          >SUBS &amp;<br />SANDWICHES</span
+        <span class="w3-text-white w3-hide-small menus-main-title"
+          >Subs And Sandwiches</span
         >
-        <p>
-          <button
-            class="w3-button w3-white w3-border w3-border-red w3-round-large"
-            style="font-size: 2.9em; padding: 24px 64px"
-          >
-            See Subs &amp; Sandwiches Menu
-          </button>
-        </p>
-      </div>
-    </header>
 
-    <!-- Subs & Sandwiches Menu Container -->
-    <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
-      <div class="w3-content" style="max-width:1500px;">
-        <div class="w3-row w3-center w3-border w3-border-dark-grey">
-          <div class="w3-col s12 w3-padding-large">
+        <!-- Menu Navigation Buttons -->
+        <div class="w3-row w3-center menus-button-row">
+          <div
+            class="w3-col s12 w3-padding-large w3-center menus-button-container"
+          >
             <a href="Subs.html">
               <button
-                class="w3-button w3-white w3-border w3-border-red w3-round-large w3-red"
+                class="w3-button w3-white w3-border w3-border-red w3-round-large w3-red menus-large-button-xl"
               >
                 Subs And Sandwiches
               </button>
             </a>
             <a href="PartyPlatter.html">
               <button
-                class="w3-button w3-white w3-border w3-border-red w3-round-large"
+                class="w3-button w3-white w3-border w3-border-red w3-round-large menus-large-button"
               >
                 Party Platters
               </button>
             </a>
             <a href="HeatNServe.html">
               <button
-                class="w3-button w3-white w3-border w3-border-red w3-round-large"
+                class="w3-button w3-white w3-border w3-border-red w3-round-large menus-large-button-wide"
               >
                 Heat N Serve
               </button>
             </a>
           </div>
         </div>
-        <div
-          class="w3-container w3-padding-32 w3-white"
-          style="font-size: 1.5em"
-        >
+      </div>
+    </header>
+        <div class="w3-container w3-padding-32 w3-white subs-content-section">
           <div class="w3-row-padding">
             <div class="w3-half">
-              <h2 class="w3-text-dark-grey" style="text-align:center; font-size:1.5em; letter-spacing:1px;">
+              <h2 class="w3-text-dark-grey subs-section-title">
                 <span class="subs-emoji">🥖</span> Bread Choices
               </h2>
-              <div style="background:#575555; box-shadow:0 2px 12px rgba(0,0,0,0.06); border-radius:28px; padding:24px 10px 10px 10px; margin-bottom:24px;">
-                <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:12px; font-family:'Times New Roman', Times, serif;">
-                  <span style="background:#f5f5f5; border-radius:20px; padding:10px 22px; font-size:1.1em; border:1px solid #eee;">Sub roll</span>
-                  <span style="background:#f5f5f5; border-radius:20px; padding:10px 22px; font-size:1.1em; border:1px solid #eee;">Bulkie roll</span>
-                  <span style="background:#f5f5f5; border-radius:20px; padding:10px 22px; font-size:1.1em; border:1px solid #eee;">Braided roll</span>
-                  <span style="background:#f5f5f5; border-radius:20px; padding:10px 22px; font-size:1.1em; border:1px solid #eee;">Marble rye</span>
-                  <span style="background:#f5f5f5; border-radius:20px; padding:10px 22px; font-size:1.1em; border:1px solid #eee;">Wheat</span>
-                  <span style="background:#f5f5f5; border-radius:20px; padding:10px 22px; font-size:1.1em; border:1px solid #eee;">Multigrain</span>
-                  <span style="background:#f5f5f5; border-radius:20px; padding:10px 22px; font-size:1.1em; border:1px solid #eee;">Italian scali</span>
-                  <span style="background:#f5f5f5; border-radius:20px; padding:10px 22px; font-size:1.1em; border:1px solid #eee;">Gluten free</span>
+              <div class="subs-category-container">
+                <div class="subs-bread-flex">
+                  <span class="subs-bread-item">Sub roll</span>
+                  <span class="subs-bread-item">Bulkie roll</span>
+                  <span class="subs-bread-item">Braided roll</span>
+                  <span class="subs-bread-item">Marble rye</span>
+                  <span class="subs-bread-item">Wheat</span>
+                  <span class="subs-bread-item">Multigrain</span>
+                  <span class="subs-bread-item">Italian scali</span>
+                  <span class="subs-bread-item">Gluten free</span>
                 </div>
               </div>
-              <h2 class="w3-text-dark-grey" style="text-align:center; font-size:1.3em;">
+              <h2 class="w3-text-dark-grey subs-section-title-small">
                 <span class="subs-emoji">🥗</span> Toppings
               </h2>
-              <div style="background:#575555; box-shadow:0 2px 12px rgba(0,0,0,0.06); border-radius:28px; padding:24px 10px 10px 10px; margin-bottom:24px;">
-                <span style="background:#e8f5e9; border-radius:20px; padding:10px 22px; font-size:1em; border:1px solid #b2dfdb;">Lettuce</span>
-                <span style="background:#e8f5e9; border-radius:20px; padding:10px 22px; font-size:1em; border:1px solid #b2dfdb;">Tomato</span>
-                <span style="background:#e8f5e9; border-radius:20px; padding:10px 22px; font-size:1em; border:1px solid #b2dfdb;">Pickle</span>
-                <span style="background:#e8f5e9; border-radius:20px; padding:10px 22px; font-size:1em; border:1px solid #b2dfdb;">Onion</span>
-                <span style="background:#e8f5e9; border-radius:20px; padding:10px 22px; font-size:1em; border:1px solid #b2dfdb;">Hot pepper</span>
+              <div class="subs-category-container">
+                <span class="subs-topping-item">Lettuce</span>
+                <span class="subs-topping-item">Tomato</span>
+                <span class="subs-topping-item">Pickle</span>
+                <span class="subs-topping-item">Onion</span>
+                <span class="subs-topping-item">Hot pepper</span>
               </div>
-              <h2 class="w3-text-dark-grey" style="text-align:center; font-size:1.3em;">
+              <h2 class="w3-text-dark-grey subs-section-title-small">
                 <span class="subs-emoji">🧂</span> Condiments
               </h2>
-              <div style="background:#575555; box-shadow:0 2px 12px rgba(0,0,0,0.06); border-radius:28px; padding:24px 10px 10px 10px; margin-bottom:24px;">
-                <span style="background:#fff3e0; border-radius:20px; padding:10px 22px; font-size:1.1em; border:1px solid #ffe0b2;">Mayonnaise</span>
-                <span style="background:#fff3e0; border-radius:20px; padding:10px 22px; font-size:1.1em; border:1px solid #ffe0b2;">Yellow mustard</span>
-                <span style="background:#fff3e0; border-radius:20px; padding:10px 22px; font-size:1.1em; border:1px solid #ffe0b2;">Deli mustard</span>
-                <span style="background:#fff3e0; border-radius:20px; padding:10px 22px; font-size:1.1em; border:1px solid #ffe0b2;">Spicy mustard</span>
-                <span style="background:#fff3e0; border-radius:20px; padding:10px 22px; font-size:1.1em; border:1px solid #ffe0b2;">Honey mustard</span>
-                <span style="background:#fff3e0; border-radius:20px; padding:10px 22px; font-size:1.1em; border:1px solid #ffe0b2;">Horseradish</span>
-                <span style="background:#fff3e0; border-radius:20px; padding:10px 22px; font-size:1.1em; border:1px solid #ffe0b2;">Italian oil</span>
+              <div class="subs-category-container">
+                <span class="subs-condiment-item">Mayonnaise</span>
+                <span class="subs-condiment-item">Yellow mustard</span>
+                <span class="subs-condiment-item">Deli mustard</span>
+                <span class="subs-condiment-item">Spicy mustard</span>
+                <span class="subs-condiment-item">Honey mustard</span>
+                <span class="subs-condiment-item">Horseradish</span>
+                <span class="subs-condiment-item">Italian oil</span>
               </div>
-              <h2 class="w3-text-dark-grey" style="text-align:center; font-size:1.3em;">
+              <h2 class="w3-text-dark-grey subs-section-title-small">
                 <span class="subs-emoji">🧀</span> Additions
               </h2>
-              <div style="background:#575555; box-shadow:0 2px 12px rgba(0,0,0,0.06); border-radius:28px; padding:24px 10px 10px 10px; margin-bottom:24px;">
-                <span style="background:#ede7f6; border-radius:20px; padding:10px 22px; font-size:1.1em; border:1px solid #d1c4e9;">Cheese: Fresh mozzarella and American</span>
-                <span style="background:#ede7f6; border-radius:20px; padding:10px 22px; font-size:1.1em; border:1px solid #d1c4e9;">Bacon</span>
+              <div class="subs-category-container">
+                <span class="subs-addition-item"
+                  >Cheese: Fresh mozzarella and American</span
+                >
+                <span class="subs-addition-item">Bacon</span>
               </div>
             </div>
             <div class="w3-half">
-              <h2 class="w3-text-dark-grey" style="text-align:center; font-size:1.5em; letter-spacing:1px;">
+              <h2 class="w3-text-dark-grey subs-section-title">
                 <span class="subs-emoji">🥪</span> Sandwiches
               </h2>
-              <div style="background:#575555; box-shadow:0 2px 12px rgba(0,0,0,0.06); border-radius:28px; padding:24px 10px 10px 10px; margin-bottom:24px;">
-                <span style="background:#fffde7; border-radius:18px; padding:12px 28px; font-size:1em; border:1px solid #ffe082; min-width:200px; text-align:center;"><b>Boar's Head deluxe boiled ham</b></span>
-                <span style="background:#fffde7; border-radius:18px; padding:12px 28px; font-size:1.1em; border:1px solid #ffe082; min-width:200px; text-align:center;">Baked ham</span>
-                <span style="background:#fffde7; border-radius:18px; padding:12px 28px; font-size:1.1em; border:1px solid #ffe082; min-width:200px; text-align:center;">Boiled ham</span>
-                <span style="background:#fffde7; border-radius:18px; padding:12px 28px; font-size:1.1em; border:1px solid #ffe082; min-width:200px; text-align:center;">Black forest ham</span>
-                <span style="background:#fffde7; border-radius:18px; padding:12px 28px; font-size:1.1em; border:1px solid #ffe082; min-width:200px; text-align:center;">BLT</span>
-                <span style="background:#fffde7; border-radius:18px; padding:12px 28px; font-size:1.1em; border:1px solid #ffe082; min-width:200px; text-align:center;">Bologna</span>
-                <span style="background:#fffde7; border-radius:18px; padding:12px 28px; font-size:1.1em; border:1px solid #ffe082; min-width:200px; text-align:center;">
-                  Capicola <span style="font-size:1.2em;">(hot or sweet)</span>
+              <div class="subs-category-container">
+                <span class="subs-sandwich-item w3-bold"
+                  >Boar's Head deluxe boiled ham</span
+                >
+                <span class="subs-sandwich-item">Baked ham</span>
+                <span class="subs-sandwich-item">Boiled ham</span>
+                <span class="subs-sandwich-item">Black forest ham</span>
+                <span class="subs-sandwich-item">BLT</span>
+                <span class="subs-sandwich-item">Bologna</span>
+                <span class="subs-sandwich-item">
+                  Capicola <span class="subs-emoji">(hot or sweet)</span>
                 </span>
-                <span style="background:#fffde7; border-radius:18px; padding:12px 28px; font-size:1.1em; border:1px solid #ffe082; min-width:260px; text-align:center;">
-                  Caprese<br>
-                  <span style="display:block; font-size:0.95em; color:#555;">
-                    — Fresh mozzarella, tomato, basil, oil, seasoning, and balsamic vinegar
+                <span class="subs-sandwich-item-large">
+                  Caprese<br />
+                  <span class="subs-sandwich-description">
+                    — Fresh mozzarella, tomato, basil, oil, seasoning, and
+                    balsamic vinegar
                   </span>
                 </span>
-                <span style="background:#fffde7; border-radius:18px; padding:12px 28px; font-size:1.1em; border:1px solid #ffe082; min-width:260px; text-align:center;">Chicken (sliced)</span>
-                <span style="background:#fffde7; border-radius:18px; padding:12px 28px; font-size:1.1em; border:1px solid #ffe082; min-width:260px; text-align:center;">
-                  Chicken cordon bleu<br>
-                  <span style="display:block; font-size:0.95em; color:#555;">
+                <span class="subs-sandwich-item-large">Chicken (sliced)</span>
+                <span class="subs-sandwich-item-large">
+                  Chicken cordon bleu<br />
+                  <span class="subs-sandwich-description">
                     — Chicken cutlet, Boar's Head ham, Swiss cheese
                   </span>
                 </span>
-                <span style="background:#fffde7; border-radius:18px; padding:12px 28px; font-size:1.1em; border:1px solid #ffe082; min-width:260px; text-align:center;">Chicken cutlet</span>
-                <span style="background:#fffde7; border-radius:18px; padding:12px 28px; font-size:1.1em; border:1px solid #ffe082; min-width:260px; text-align:center;">Chicken salad</span>
-                <span style="background:#fffde7; border-radius:18px; padding:12px 28px; font-size:1.1em; border:1px solid #ffe082; min-width:260px; text-align:center;">Egg salad</span>
-                <span style="background:#fffde7; border-radius:18px; padding:12px 28px; font-size:1.1em; border:1px solid #ffe082; min-width:260px; text-align:center;">Genoa salami</span>
-                <span style="background:#fffde7; border-radius:18px; padding:12px 28px; font-size:1.1em; border:1px solid #ffe082; min-width:260px; text-align:center;">
-                  Italian<br>
-                  <span style="display:block; font-size:0.95em; color:#555;">
+                <span class="subs-sandwich-item-large">Chicken cutlet</span>
+                <span class="subs-sandwich-item-large">Chicken salad</span>
+                <span class="subs-sandwich-item-large">Egg salad</span>
+                <span class="subs-sandwich-item-large">Genoa salami</span>
+                <span class="subs-sandwich-item-large">
+                  Italian<br />
+                  <span class="subs-sandwich-description">
                     — Ham, salami, capicola, mortadella, provolone
                   </span>
                 </span>
-                <span style="background:#fffde7; border-radius:18px; padding:12px 28px; font-size:1.1em; border:1px solid #ffe082; min-width:260px; text-align:center;">Mortadella</span>
-                <span style="background:#fffde7; border-radius:18px; padding:12px 28px; font-size:1.1em; border:1px solid #ffe082; min-width:260px; text-align:center;">Pastrami</span>
-                <span style="background:#fffde7; border-radius:18px; padding:12px 28px; font-size:1.1em; border:1px solid #ffe082; min-width:260px; text-align:center;">Prosciutto</span>
-                <span style="background:#fffde7; border-radius:18px; padding:12px 28px; font-size:1.1em; border:1px solid #ffe082; min-width:260px; text-align:center;">Roast beef</span>
-                <span style="background:#fffde7; border-radius:18px; padding:12px 28px; font-size:1.1em; border:1px solid #ffe082; min-width:260px; text-align:center;">Roast turkey</span>
-                <span style="background:#fffde7; border-radius:18px; padding:12px 28px; font-size:1.1em; border:1px solid #ffe082; min-width:260px; text-align:center;">Tuna salad</span>
-                <span style="background:#fffde7; border-radius:18px; padding:12px 28px; font-size:1.1em; border:1px solid #ffe082; min-width:260px; text-align:center;">Turkey breast</span>
-                <span style="background:#fffde7; border-radius:18px; padding:12px 28px; font-size:1.1em; border:1px solid #ffe082; min-width:260px; text-align:center;">Vegetarian</span>
+                <span class="subs-sandwich-item-large">Mortadella</span>
+                <span class="subs-sandwich-item-large">Pastrami</span>
+                <span class="subs-sandwich-item-large">Prosciutto</span>
+                <span class="subs-sandwich-item-large">Roast beef</span>
+                <span class="subs-sandwich-item-large">Roast turkey</span>
+                <span class="subs-sandwich-item-large">Tuna salad</span>
+                <span class="subs-sandwich-item-large">Turkey breast</span>
+                <span class="subs-sandwich-item-large">Vegetarian</span>
               </div>
               <div
                 class="w3-panel w3-pale-yellow w3-leftbar w3-border-yellow w3-margin-top"
-              >
-              </div>
+              ></div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Move the map image here, just above the footer -->
     <img
       src="assets/mapdfgd.png"
-      class="w3-image w3-greyscale"
-      style="width: 100%"
+      class="w3-image w3-greyscale w3-full-width"
       alt="Map"
     />
 
@@ -248,5 +286,7 @@
         >
       </p>
     </footer>
+
+    <script src="scripts/scripts.js"></script>
   </body>
 </html>

@@ -7,6 +7,25 @@ function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
 }
 
+// Gallery Modal Function
+function openModal(src, caption) {
+  document.getElementById("lightbox").style.display = "block";
+  document.getElementById("modal-img").src = src;
+  document.getElementById("modal-caption").innerHTML = caption;
+}
+
+// Close modal when clicking outside
+document.addEventListener("DOMContentLoaded", function () {
+  const lightbox = document.getElementById("lightbox");
+  if (lightbox) {
+    lightbox.addEventListener("click", function (e) {
+      if (e.target === lightbox) {
+        lightbox.style.display = "none";
+      }
+    });
+  }
+});
+
 // LIGHTBOX SCRIPT
 document.addEventListener("DOMContentLoaded", function () {
   const openButton = document.querySelector(".sidebar-open");

@@ -9,27 +9,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Amatic+SC"
     />
-    <style>
-      body,
-      html {
-        height: 100%;
-      }
-      body,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-family: "Amatic SC", sans-serif;
-      }
-      .bgimg {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-image: url("assets/Heatbg.png");
-        min-height: 90%;
-      }
-    </style>
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <!-- Navbar (sit on top) -->
@@ -37,113 +17,319 @@
       <div
         class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off"
         id="myNavbar"
-        style="display: flex; justify-content: center;"
+        style="display: flex; justify-content: center"
       >
         <a
-          href="#"
+          href="index.html"
           class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
           >Home</a
         >
         <a
-          href="#"
+          href="about.html"
           class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
           >About</a
         >
         <a
-          href="#"
+          href="menus.html"
           class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
           >Menus</a
         >
         <a
-          href="#"
+          href="gallery.html"
           class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
           >Gallery</a
         >
         <a
-          href="#"
+          href="contact.html"
           class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
           >Contact</a
         >
         <a
-          href="#"
+          href="findus.html"
           class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
           >Find Us</a
         >
         <a
-          href="#"
+          href="apply.html"
           class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
           >Apply For A Job</a
         >
       </div>
     </div>
 
+    <!-- Hamburger Toggle Button (mobile only) -->
+    <button
+      class="menu-toggle"
+      aria-controls="smallMenu"
+      aria-expanded="false"
+      onclick="toggleMenu()"
+      style="position: fixed; top: 12px; left: 18px; z-index: 1001"
+    >
+      <span class="hamburger-icon"></span>
+      <span class="hamburger-icon"></span>
+      <span class="hamburger-icon"></span>
+    </button>
+    <!-- Collapsible Mobile Menu -->
+    <div
+      id="smallMenu"
+      class="w3-bar-block w3-light-gray w3-hide w3-hide-medium w3-hide-large w3-center"
+      aria-hidden="true"
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1000;
+        overflow-y: auto;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.13);
+      "
+    >
+      <a
+        href="index.html"
+        class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
+        >Home</a
+      >
+      <a
+        href="about.html"
+        class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
+        >About</a
+      >
+      <a
+        href="menus.html"
+        class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
+        >Menus</a
+      >
+      <a
+        href="gallery.html"
+        class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
+        >Gallery</a
+      >
+      <a
+        href="contact.html"
+        class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
+        >Contact</a
+      >
+      <a
+        href="findus.html"
+        class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
+        >Find Us</a
+      >
+      <a
+        href="apply.html"
+        class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
+        >Apply For A Job</a
+      >
+    </div>
     <!-- Header with image -->
     <header class="bgimg w3-display-container w3-grayscale-min" id="home">
-      <div class="w3-display-bottomleft w3-padding">
-        <span class="w3-tag w3-xlarge">Open from 10am to 12pm</span>
-      </div>
       <div class="w3-display-middle w3-center">
-        <span class="w3-text-white w3-hide-small" style="font-size: 140px"
-          >OUR MENU</span
+        <span class="w3-text-white w3-hide-small menus-main-title"
+          >Our Menu</span
         >
-    <div class="w3-row w3-center w3-border w3-border-white">
-          <!-- <div class="w3-col s12 w3-padding-large"> -->
-          </div>
-          <div class="w3-col s12 w3-padding-large" style="display: flex; justify-content: center; gap: 32px;">
+
+        <!-- Menu Navigation Buttons -->
+        <div class="w3-row w3-center menus-button-row">
+          <div
+            class="w3-col s12 w3-padding-large w3-center menus-button-container"
+          >
             <a href="Subs.html">
               <button
-                class="w3-button w3-white w3-border w3-border-red w3-round-large w3-red"
-                style="font-size: 50px; padding:20px 28px;"
+                class="w3-button w3-white w3-border w3-border-red w3-round-large w3-red menus-large-button-xl"
               >
                 Subs And Sandwiches
               </button>
             </a>
             <a href="PartyPlatter.html">
               <button
-                class="w3-button w3-white w3-border w3-border-red w3-round-large"
-                style="font-size: 50px; padding:20px 28px;"
+                class="w3-button w3-white w3-border w3-border-red w3-round-large menus-large-button"
               >
                 Party Platters
               </button>
             </a>
             <a href="HeatNServe.html">
               <button
-                class="w3-button w3-white w3-border w3-border-red w3-round-large"
-                style="font-size: 50px; padding:20px 48px;"
+                class="w3-button w3-white w3-border w3-border-red w3-round-large menus-large-button-wide"
               >
                 Heat N Serve
               </button>
             </a>
           </div>
-        </p>
+        </div>
       </div>
     </header>
-    <!-- Subs & Sandwiches Menu Container -->
-    <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
-      <div class="w3-content">
+
+    <!-- Contact Us and Map Side by Side -->
+    <div
+      class="w3-container w3-center"
+      style="margin: 48px auto 0 auto; max-width: 1100px"
+    >
+      <div
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          gap: 32px;
+          justify-content: center;
+          align-items: stretch;
+        "
+      >
+        <div
+          style="
+            flex: 1 1 340px;
+            min-width: 320px;
+            max-width: 420px;
+            background: linear-gradient(135deg, #fff 70%, #ffe5e5 100%);
+            border-radius: 26px;
+            box-shadow: 0 8px 36px rgba(183, 28, 28, 0.13),
+              0 2px 8px rgba(0, 0, 0, 0.08);
+            padding: 48px 38px 36px 38px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1.5px solid #f8d7da;
+          "
+        >
+          <h2
+            class="w3-text-red"
+            style="
+              margin-bottom: 22px;
+              font-size: 2.5em;
+              letter-spacing: 2px;
+              font-weight: 900;
+              text-shadow: 0 2px 12px #fff3f3;
+            "
+          >
+            Contact Us
+          </h2>
+          <div
+            style="
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              gap: 18px;
+              align-items: flex-start;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                font-size: 1.18em;
+                color: #b71c1c;
+                font-weight: 700;
+              "
+            >
+              <span style="font-size: 1.3em">📍</span> 93 Main Street, Andover,
+              MA 01810
+            </div>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                font-size: 1.18em;
+                color: #b71c1c;
+                font-weight: 700;
+              "
+            >
+              <span style="font-size: 1.3em">📞</span>
+              <a
+                href="tel:9784700320"
+                style="color: #b71c1c; text-decoration: none; font-weight: bold"
+                >(978) 470-0320</a
+              >
+            </div>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                font-size: 1.08em;
+                color: #222;
+                background: #fff6f6;
+                border-radius: 8px;
+                padding: 8px 14px;
+                width: 100%;
+                font-weight: 500;
+              "
+            >
+              <span style="font-size: 1.2em; color: #b71c1c">⏰</span>
+              <span
+                ><span style="color: #b71c1c; font-weight: bold">Hours:</span>
+                Mon-Sat: 9am-6pm<br />Sun: 9am-4pm</span
+              >
+            </div>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                font-size: 1.13em;
+                color: #b71c1c;
+                font-weight: 700;
+              "
+            >
+              <span style="font-size: 1.2em">✉️</span>
+              <a
+                href="mailto:info@andoverdeli.com"
+                style="color: #b71c1c; text-decoration: none; font-weight: 600"
+                >info@andoverdeli.com</a
+              >
+            </div>
+          </div>
+          <div
+            style="
+              font-size: 1.18em;
+              color: #b71c1c;
+              margin-top: 28px;
+              font-weight: bold;
+              letter-spacing: 0.5px;
+              align-self: flex-start;
+            "
+          >
+            Follow Us:
+          </div>
+          <div
+            style="
+              margin-top: 12px;
+              display: flex;
+              gap: 18px;
+              justify-content: flex-start;
+              width: 100%;
+            "
+          >
+            <!-- Social icons can be added here -->
+          </div>
+        </div>
+        <div
+          style="
+            flex: 2 1 520px;
+            min-width: 380px;
+            max-width: 800px;
+            display: flex;
+            align-items: center;
+          "
+        >
+          <img
+            src="assets/mapdfgd.png"
+            class="w3-image w3-greyscale"
+            style="
+              width: 100%;
+              height: 440px;
+              min-height: 320px;
+              border-radius: 18px;
+              box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+              object-fit: cover;
+            "
+            alt="Map"
+          />
         </div>
       </div>
     </div>
 
-    <img
-      src="assets/mapdfgd.png"
-      class="w3-image w3-greyscale"
-      style="width: 100%"
-      alt="Map"
-    />
-
     <!-- Footer -->
-    <footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
-      <p>
-        Powered by
-        <a
-          href="https://www.w3schools.com/w3css/default.asp"
-          title="W3.CSS"
-          target="_blank"
-          class="w3-hover-text-green"
-          >w3.css</a
-        >
-      </p>
-    </footer>
+    <footer class="w3-center w3-black w3-padding-48 w3-xxlarge"></footer>
   </body>
 </html>
