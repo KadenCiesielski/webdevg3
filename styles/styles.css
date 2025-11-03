@@ -1,4 +1,241 @@
 /* =========================
+   W3.CSS FRAMEWORK CUSTOM STYLES
+   ========================= */
+
+/* Global Styles */
+body,
+html {
+  height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Amatic SC", sans-serif;
+}
+
+/* Background Images */
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../assets/Heatbg.png");
+  min-height: 90%;
+}
+
+.hero-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../assets/deli_logo.png");
+  min-height: 90%;
+}
+
+/* Navigation Styles */
+.navbar-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.nav-button {
+  margin: 0 4px;
+}
+
+/* Typography Sizes */
+.hero-title-large {
+  font-size: 140px;
+}
+
+.hero-title-small {
+  font-size: 60px;
+}
+
+.section-title-large {
+  font-size: 100px;
+}
+
+.section-title-medium {
+  font-size: 80px;
+}
+
+.section-title-small {
+  font-size: 60px;
+}
+
+.menu-section-title {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.card-title {
+  font-size: 50px;
+}
+
+.card-subtitle {
+  font-size: 40px;
+}
+
+.card-text-large {
+  font-size: 24px;
+}
+
+.card-text-medium {
+  font-size: 20px;
+}
+
+.card-text-small {
+  font-size: 18px;
+}
+
+/* Button Styles */
+.large-menu-button {
+  font-size: 50px;
+  padding: 20px 28px;
+}
+
+.large-action-button {
+  font-size: 2.9em;
+  padding: 24px 64px;
+}
+
+.menu-nav-button {
+  font-size: 50px;
+  padding: 20px 48px;
+}
+
+/* Gallery Styles */
+.gallery-img {
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.gallery-img:hover {
+  opacity: 0.7;
+}
+
+/* Utility Classes */
+.w3-full-width {
+  width: 100%;
+}
+
+.w3-margin-auto {
+  max-width: 1500px;
+}
+
+.w3-bold {
+  font-weight: bold;
+}
+
+.w3-margin-top-80 {
+  margin-top: 80px;
+}
+
+.menu-buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+/* Subs Page Specific Styles */
+.subs-content-section {
+  font-size: 1.5em;
+}
+
+.subs-section-title {
+  text-align: center;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+
+.subs-section-title-small {
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.subs-category-container {
+  background: #575555;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  border-radius: 28px;
+  padding: 24px 10px 10px 10px;
+  margin-bottom: 24px;
+}
+
+.subs-bread-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.subs-bread-item {
+  background: #f5f5f5;
+  border-radius: 20px;
+  padding: 10px 22px;
+  font-size: 1.1em;
+  border: 1px solid #eee;
+}
+
+.subs-topping-item {
+  background: #e8f5e9;
+  border-radius: 20px;
+  padding: 10px 22px;
+  font-size: 1em;
+  border: 1px solid #b2dfdb;
+}
+
+.subs-condiment-item {
+  background: #fff3e0;
+  border-radius: 20px;
+  padding: 10px 22px;
+  font-size: 1.1em;
+  border: 1px solid #ffe0b2;
+}
+
+.subs-addition-item {
+  background: #ede7f6;
+  border-radius: 20px;
+  padding: 10px 22px;
+  font-size: 1.1em;
+  border: 1px solid #d1c4e9;
+}
+
+.subs-sandwich-item {
+  background: #fffde7;
+  border-radius: 18px;
+  padding: 12px 28px;
+  font-size: 1.1em;
+  border: 1px solid #ffe082;
+  min-width: 200px;
+  text-align: center;
+}
+
+.subs-sandwich-item-large {
+  background: #fffde7;
+  border-radius: 18px;
+  padding: 12px 28px;
+  font-size: 1.1em;
+  border: 1px solid #ffe082;
+  min-width: 260px;
+  text-align: center;
+}
+
+.subs-sandwich-description {
+  display: block;
+  font-size: 0.95em;
+  color: #555;
+}
+
+.subs-emoji {
+  font-size: 1.2em;
+}
+
+/* =========================
    HERO SECTION STYLING
    ========================= */
 .hero {
@@ -773,13 +1010,157 @@ h2.body-title {
 }
 
 .aboutmenu-btn {
-  font-size: 20px; 
-  padding: 16px 40px; 
+  font-size: 20px;
+  padding: 16px 40px;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .aboutmenu-btn:hover {
-  transform: scale(0.95); 
+  transform: scale(0.95);
+}
+
+/* Heat N Serve Page Styles */
+.heat-serve-container {
+  max-width: 1500px;
+}
+
+.heat-serve-content {
+  font-size: 1.2em;
+  color: #000000;
+}
+
+.heat-serve-category-title {
+  letter-spacing: 1px;
+}
+
+.heat-serve-item-list {
+  line-height: 1.7;
+}
+
+.heat-serve-section-title {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 40px;
+  letter-spacing: 1px;
+}
+
+.heat-serve-section-title + .w3-row-padding {
+  margin-top: 24px;
+}
+
+.heat-serve-tray-card {
+  border-radius: 16px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.heat-serve-tray-title {
+  font-weight: bold;
+  font-family: "Times New Roman", serif;
+  font-size: 1.8em;
+}
+
+.heat-serve-tray-list {
+  line-height: 1.6;
+  font-family: "Times New Roman", serif;
+  font-size: 1.4em;
+}
+
+.heat-serve-main-title {
+  font-size: 4em;
+}
+
+.heat-serve-subtitle {
+  font-size: 2.5em;
+}
+
+.heat-serve-description {
+  font-size: 1.7em;
+}
+
+.heat-serve-price-tag {
+  font-size: 1em;
+}
+
+.heat-serve-map-image {
+  width: 100%;
+}
+
+/* Menus Page Styles */
+.menus-main-title {
+  font-size: 180px;
+}
+
+.menus-button-container {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.menus-button-row {
+  margin-top: 40px;
+}
+
+.menus-large-button {
+  font-size: 30px;
+  padding: 25px 40px;
+  width: 350px;
+  font-family: "Times New Roman", serif;
+}
+
+.menus-large-button-xl {
+  font-size: 30px;
+  padding: 25px 40px;
+  width: 350px;
+  font-family: "Times New Roman", serif;
+}
+
+.menus-large-button-wide {
+  font-size: 30px;
+  padding: 25px 40px;
+  width: 350px;
+  font-family: "Times New Roman", serif;
+}
+
+.menus-map-image {
+  width: 100%;
+}
+
+/* Menus Page Specific Styles */
+.menus-page-body,
+.menus-page-html {
+  height: 100%;
+}
+
+.menus-page-body,
+.menus-page-h1,
+.menus-page-h2,
+.menus-page-h3,
+.menus-page-h4,
+.menus-page-h5,
+.menus-page-h6 {
+  font-family: "Amatic SC", sans-serif;
+}
+
+.menus-bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("assets/Heatbg.png");
+  min-height: 90%;
+}
+
+/* PartyPlatter Page Button Styles */
+.party-menu-button {
+  font-family: "Times New Roman", serif;
+  text-decoration: none;
+}
+
+a .party-menu-button {
+  text-decoration: none;
+}
+
+a:hover .party-menu-button {
+  text-decoration: none;
 }
 
 /* findUs.html css */
