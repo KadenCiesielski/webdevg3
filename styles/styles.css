@@ -18,6 +18,40 @@ h6 {
   font-family: "Amatic SC", sans-serif;
 }
 
+/* Hamburger Menu Styles */
+.menu-toggle {
+  font-size: 22px;
+  padding: 12px 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hamburger-icon {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+/* ensure menu items appear centered inline */
+.menu-center {
+  display: inline-block;
+}
+
+.x-margin-small {
+  margin: 4px;
+}
+
+/* Mobile menu visibility */
+#smallMenu.w3-show {
+  display: block !important;
+}
+
 /* Background Images */
 .bgimg {
   background-repeat: no-repeat;
@@ -1264,32 +1298,47 @@ h2.body-title {
 }
 
 .heat-serve-section-title {
-  font-size: 2em;
+  font-size: 2.5em;
   text-align: center;
   margin-top: 40px;
-  letter-spacing: 1px;
+  margin-bottom: 32px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
 }
 
 .heat-serve-section-title + .w3-row-padding {
-  margin-top: 24px;
+  margin-top: 32px;
+  margin-bottom: 48px;
 }
 
 .heat-serve-tray-card {
-  border-radius: 16px;
+  border-radius: 20px;
   background: #f9f9f9;
   text-align: center;
+  padding: 32px 24px;
+  min-height: 450px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.heat-serve-tray-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
 }
 
 .heat-serve-tray-title {
   font-weight: bold;
   font-family: "Times New Roman", serif;
-  font-size: 1.8em;
+  font-size: 2.2em;
+  margin-bottom: 16px;
+  margin-top: 24px;
 }
 
 .heat-serve-tray-list {
-  line-height: 1.6;
+  line-height: 1.8;
   font-family: "Times New Roman", serif;
-  font-size: 1.4em;
+  font-size: 1.6em;
+  margin-bottom: 20px;
 }
 
 .heat-serve-main-title {
