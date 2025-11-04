@@ -97,3 +97,22 @@ function toggleMenu() {
     x.className = x.className.replace(" w3-show", "");
   }
 }
+
+// Fade-in animation for sections when they scroll into view
+document.addEventListener("DOMContentLoaded", () => {
+  const fadeSections = document.querySelectorAll(".fade-section, .gallery-section img");
+
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target); // animate only once
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  fadeSections.forEach(section => observer.observe(section));
+});
