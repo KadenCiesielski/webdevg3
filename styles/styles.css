@@ -2099,3 +2099,44 @@ h2.body-title {
   font-size: 1.1em;
   font-weight: 500;
 }
+
+/* THE ANDOVER Platter Pricing - Extra Large */
+.platter-list-andover-xl {
+  text-align: center;
+  font-family: "Times New Roman", serif;
+  font-size: 2.2em !important;
+  line-height: 1.8;
+  font-weight: bold;
+}
+
+.platter-list-andover-xl li {
+  margin: 8px 0;
+  padding: 4px 0;
+}
+
+/* Large Pricing Text Styles */
+.platter-pricing-xxl {
+  text-align: center;
+  font-family: "Times New Roman", serif;
+  font-size: 2.8em !important;
+  line-height: 1.6;
+  font-weight: bold;
+  color: #b71c1c;
+  margin: 20px 0;
+}
+
+.platter-pricing-xxl li {
+  margin: 12px 0;
+  padding: 8px 0;
+}
+
+/* Individual pricing line styles */
+.pricing-line-large {
+  font-size: 2.5em !important;
+  font-weight: bold;
+  font-family: "Times New Roman", serif;
+  color: #b71c1c;
+  text-align: center;
+  margin: 10px 0;
+  line-height: 1.5;
+}
