@@ -38,6 +38,29 @@ Emily: code written on gallery page to be copied by group members
     - Still links address to find us page with number linked and links to socials (facebook, instagram, twitter) + reviews (google reviews + yelp)
     - Used social links from orginal website 
 
+Jacob: 
+-About Page
+I made the page look much more visually appealing instead of just plain text
+I added a picture from online of the store
+Used custom w3 fonts for the titles
+Used w3.css for the colors, rows, padding etc.
+Hamburger Menu
+-Find Us
+I made the page look visually appealing and less basic
+I used w3 icons for the contact side
+I used w3 padding to put on top of the white background
+I made the text area only have vertically adjustment so you can move the text area outside of the padding
+I added a get directions button that sends the user to google maps
+Hamburger Menu
+-Apply For a Job Page
+Made the applying section look more modern
+Used black padding on a white background to look visually appealing
+Added the store logo to the employment application
+used vertical text areas like in find us
+custom w3 fonts
+Used many w3.css styles in my code
+Hamburger Menu
+
 
 Project split:
 Kaden: Home, Gallery
