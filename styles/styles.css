@@ -1563,63 +1563,107 @@ a:hover .party-menu-button {
 }
 
 header.w3-top {
-  position: fixed;
+  position: fixed !important;
   top: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 100 !important;
 }
 
-header .w3-bar {
-  background-color: #000;
-  padding: 0.5rem 1rem;
-  box-shadow: none;
+header.w3-top .w3-bar {
+  background-color: #000 !important;
+  padding: 0.5rem 1rem !important;
+  box-shadow: none !important;
 }
 
-header .w3-bar-item.w3-wide {
-  font-family: "Amatic SC", cursive;
-  font-size: 28px;
+header.w3-top .w3-bar-item.w3-wide {
+  font-family: "Amatic SC", cursive !important;
+  font-size: 28px !important;
   font-weight: 400;
   letter-spacing: 2px;
-  color: #f0f0f0;
+  color: #f0f0f0 !important;
 }
 
-header .w3-bar .w3-bar-item.w3-button {
-  font-family: "Amatic SC", cursive;
-  font-size: 22px;
+header.w3-top .w3-bar-item.w3-button {
+  font-family: "Amatic SC", cursive !important;
+  font-size: 22px !important;
   font-weight: 400;
   letter-spacing: 1px;
-  color: #f0f0f0;
-  text-decoration: none;
+  color: #f0f0f0 !important;
+  text-decoration: none !important;
   transition: background 0.3s, color 0.3s;
-  padding: 12px 20px;
+  padding: 12px 20px !important;
+  background: none !important;
+  border: none !important;
 }
 
-header .w3-bar .w3-bar-item.w3-button:hover,
-header .w3-bar .w3-bar-item.w3-button:focus {
-  background-color: #111;
-  color: #fff;
+header.w3-top .w3-bar-item.w3-button:hover,
+header.w3-top .w3-bar-item.w3-button:focus {
+  background-color: #111 !important;
+  color: #fff !important;
 }
 
-header .w3-right {
-  display: inline-block;
+header.w3-top .w3-right {
+  display: inline-block !important;
 }
 
 #navMenu.w3-bar-block {
-  background-color: #000;
+  background-color: #000 !important;
 }
-#navMenu .w3-bar-item.w3-button {
-  font-family: "Amatic SC", cursive;
-  font-size: 20px;
-  color: #f0f0f0;
-  padding: 12px 16px;
+#navMenu.w3-bar-block .w3-bar-item.w3-button {
+  font-family: "Amatic SC", cursive !important;
+  font-size: 20px !important;
+  color: #f0f0f0 !important;
+  padding: 12px 16px !important;
 }
-#navMenu .w3-bar-item.w3-button:hover {
-  background-color: #111;
+#navMenu.w3-bar-block .w3-bar-item.w3-button:hover {
+  background-color: #111 !important;
 }
 
-header .w3-bar *,
+header.w3-top .w3-bar *,
 #navMenu * {
-  box-shadow: none;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+@media (min-width: 601px) {
+  header .w3-bar-item.w3-right.w3-hide-large.w3-hide-medium {
+    display: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  header .w3-bar-item.w3-right.w3-hide-large.w3-hide-medium {
+    display: block !important;
+  }
+}
+
+@media (max-width: 600px) {
+  header .w3-right.w3-hide-small {
+    display: none !important;
+  }
+
+  header .w3-bar-item.w3-right.w3-hide-large.w3-hide-medium {
+    display: block !important;
+  }
+
+  #navMenu.w3-bar-block {
+    display: none;
+  }
+  #navMenu.w3-bar-block.w3-show {
+    display: block !important;
+  }
+}
+
+@media (min-width: 601px) {
+  header .w3-right.w3-hide-small {
+    display: inline-block !important;
+  }
+  header .w3-bar-item.w3-right.w3-hide-large.w3-hide-medium {
+    display: none !important;
+  }
+  #navMenu.w3-bar-block {
+    display: none !important;
+  }
 }
 
 footer.w3-container.w3-black p.w3-small:first-of-type {
