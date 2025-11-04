@@ -898,103 +898,36 @@
         <div class="navigation-holder">
           <div class="wf-wrap">
             <!-- !- Navigation -->
-            <nav id="navigation">
-              <ul id="main-nav" class="fancy-rollovers wf-mobile-hidden">
-                <li
-                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-706 first"
-                >
-                  <a href="https://dagsdeli.com/"><span>Home</span></a>
-                </li>
-                <li
-                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-842"
-                >
-                  <a href="about.html"><span>About</span></a>
-                </li>
-                <li
-                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-851 has-children"
-                >
-                  <a href="#"><span>About</span></a>
-                  <div class="sub-nav">
-                    <ul>
-                      <li
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-769 first level-arrows-on"
-                      >
-                        <a href="about.html"><span>About</span></a>
-                      </li>
-                      <li
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-843 level-arrows-on"
-                      >
-                        <a href="gallery.html"><span>Gallery</span></a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li
-                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-700 has-children"
-                >
-                  <a href="menus.html"><span>Menus</span></a>
-                  <div class="sub-nav">
-                    <ul>
-                      <li
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-702 first level-arrows-on"
-                      >
-                        <a href="Subs.html"
-                          ><span>Subs &#038; Sandwiches</span></a
-                        >
-                      </li>
-                      <li
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-701 level-arrows-on"
-                      >
-                        <a href="PartyPlatter.html"
-                          ><span>Party platter</span></a
-                        >
-                      </li>
-                      <li
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-703 level-arrows-on"
-                      >
-                        <a href="HeatNServe.html"
-                          ><span>Heat n&#8217; Serve</span></a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li
-                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"
-                >
-                  <a href="gallery.html"><span>Gallery</span></a>
-                </li>
-                <li
-                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-704"
-                >
-                  <a href="tel:9784700320"
-                    ><i class="fa fa-phone"></i><span>(978) 470-0320</span></a
-                  >
-                </li>
-                <li
-                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-649"
-                >
-                  <a href="findUs.html"
-                    ><i class="fa fa-map-marker"></i><span>Find Us</span></a
-                  >
-                </li>
-                <li
-                  class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-28109 current_page_item menu-item-28113 act"
-                >
-                  <a href="jobApp.html"><span>Apply for a Job!</span></a>
-                </li>
-              </ul>
-              <a
-                href="#show-menu"
-                rel="nofollow"
-                id="mobile-menu"
-                class="accent-bg"
-              >
-                <span class="menu-open">Menu</span>
-                <span class="menu-back">back</span>
-                <span class="wf-phone-visible">&nbsp;</span>
-              </a>
-            </nav>
+          	<nav class="w3-top w3-card">
+  <div class="w3-bar w3-black w3-wide w3-padding-0">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide">D’Agostino’s Deli</a>
+
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button">Home</a>
+      <a href="about.html" class="w3-bar-item w3-button">About</a>
+      <a href="menus.html" class="w3-bar-item w3-button">Menus</a>
+      <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+      <a href="findUs.html" class="w3-bar-item w3-button">Find Us</a>
+      <a href="jobApp.html" class="w3-bar-item w3-button">Apply for a Job</a>
+    </div>
+
+    <!-- Hamburger for small screens -->
+    <a href="javascript:void(0)"
+       class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+       onclick="toggleMenu()">
+      &#9776;
+    </a>
+  </div>
+
+  <div id="navMenu" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="about.html" class="w3-bar-item w3-button">About</a>
+    <a href="menus.html" class="w3-bar-item w3-button">Menus</a>
+    <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+    <a href="findUs.html" class="w3-bar-item w3-button">Find Us</a>
+    <a href="jobApp.html" class="w3-bar-item w3-button">Apply for a Job</a>
+  </div>
+</nav>
           </div>
           <!-- .wf-wrap -->
         </div>
@@ -1113,11 +1046,54 @@
 </div>
 
 
+
       <div id="main" class="sidebar-none jobApp-main">
         <!-- class="sidebar-none", class="sidebar-left", class="sidebar-right" -->
 
-		
+	
     </div>
+
+	<footer class="w3-container w3-black w3-center w3-padding-32">
+      <p class="w3-small">
+        <a href="findUs.html">93 Main Street, Andover, MA 01810</a><br />
+        Open Monday–Saturday: 9AM – 6PM | Sunday: 9AM – 4PM<br />
+        Our Number: (978) 470-0320
+      </p>
+
+      <div class="w3-section">
+        <a
+          href="https://www.facebook.com/pages/DAgostinos-Deli-of-Andover/416085931884400"
+          class="w3-text-light-grey w3-hover-text-white"
+          >Facebook</a
+        >
+        |
+        <a
+          href="https://x.com/DagsDeli"
+          class="w3-text-light-grey w3-hover-text-white"
+          >Twitter</a
+        >
+        |
+        <a
+          href="https://www.instagram.com/dagsdeli/"
+          class="w3-text-light-grey w3-hover-text-white"
+          >Instagram</a
+        >
+        |
+        <a
+          href="https://www.yelp.com/writeareview/biz/t-h0KjoxE2f9zy1Nz3-zsw?return_url=%2Fbiz%2Ft-h0KjoxE2f9zy1Nz3-zsw"
+          class="w3-text-light-grey w3-hover-text-white"
+          >Yelp</a
+        >
+        |
+        <a
+          href="https://www.google.com/maps/place/D'Agostino's+Delicatessen+-+Andover,+MA/@42.6537923,-71.1414735,17z/data=!4m12!1m2!2m1!1sdeli!3m8!1s0x89e3088bf54d9489:0x4026fe1da08fb456!8m2!3d42.6537923!4d-71.1388986!9m1!1b1!15sCgRkZWxpWgYiBGRlbGmSAQRkZWxpmgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVVJsZVVsZk5WUm5FQUWqATcQASoIIgRkZWxpKAAyHxABIhuWjJbb_hlh7bgdb5AB3USLxgEAwgPAlL9XaRwyCBACIgRkZWxp4AEA-gEECBsQKA!16s%2Fg%2F11b76gm_3t?entry=ttu&g_ep=EgoyMDI1MTAyOS4yIKXMDSoASAFQAw%3D%3D"
+          class="w3-text-light-grey w3-hover-text-white"
+          >Google Reviews</a
+        >
+      </div>
+      <p class="w3-small">© 2025 D’Agostino’s Deli</p>
+    </footer>
+
     <!-- #page -->
     <script
       data-cfasync="false"
