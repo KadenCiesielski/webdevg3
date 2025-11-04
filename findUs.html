@@ -211,31 +211,36 @@ var dtLocal = {"passText":"To view this protected post, enter the password below
 			<div class="wf-wrap ">
 
 						<!-- !- Navigation -->
-		<nav id="navigation">
-			<ul id="main-nav" class="fancy-rollovers wf-mobile-hidden">
-<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-706 first"><a href="https://dagsdeli.com/"><span>Home</span></a></li> 
-<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-842"><a href="about.html"><span>About</span></a></li> 
-<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-851 has-children"><a href="#"><span>About</span></a><div class="sub-nav"><ul>
-<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-769 first level-arrows-on"><a href="about.html"><span>About</span></a></li> 
-<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-843 level-arrows-on"><a href="gallery.html"><span>Gallery</span></a></li> </ul></div></li> 
-<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-700 has-children"><a href="menus.html"><span>Menus</span></a><div class="sub-nav"><ul>
-<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-702 first level-arrows-on"><a href="Subs.html"><span>Subs &#038; Sandwiches</span></a></li> 
-<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-701 level-arrows-on"><a href="PartyPlatter.html"><span>Party platter</span></a></li> 
-<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-703 level-arrows-on"><a href="HeatNServer.html"><span>Heat n&#8217; Serve</span></a></li> </ul></div></li> 
-<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="gallery.html"><span>Gallery</span></a></li> 
-<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-704"><a href="tel:9784700320"><i class="fa fa-phone"></i><span>(978) 470-0320</span></a></li> 
-<li class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-649 act"><a href="findUs.html"><i class="fa fa-map-marker"></i><span>Find Us</span></a></li> 
-<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-28113"><a href="jobApp.html"><span>Apply for a Job!</span></a></li> 
-</ul>
-				<a href="#show-menu" rel="nofollow" id="mobile-menu" class="accent-bg">
-					<span class="menu-open">Menu</span>
-					<span class="menu-back">back</span>
-					<span class="wf-phone-visible">&nbsp;</span>
-				</a>
+		<nav class="w3-top w3-card">
+  <div class="w3-bar w3-black w3-wide w3-padding-0">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide">D’Agostino’s Deli</a>
 
-			
-			
-		</nav>
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button">Home</a>
+      <a href="about.html" class="w3-bar-item w3-button">About</a>
+      <a href="menus.html" class="w3-bar-item w3-button">Menus</a>
+      <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+      <a href="findUs.html" class="w3-bar-item w3-button">Find Us</a>
+      <a href="jobApp.html" class="w3-bar-item w3-button">Apply for a Job</a>
+    </div>
+
+    <!-- Hamburger for small screens -->
+    <a href="javascript:void(0)"
+       class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+       onclick="toggleMenu()">
+      &#9776;
+    </a>
+  </div>
+
+  <div id="navMenu" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="about.html" class="w3-bar-item w3-button">About</a>
+    <a href="menus.html" class="w3-bar-item w3-button">Menus</a>
+    <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+    <a href="findUs.html" class="w3-bar-item w3-button">Find Us</a>
+    <a href="jobApp.html" class="w3-bar-item w3-button">Apply for a Job</a>
+  </div>
+</nav>
 
 			                
 
@@ -247,140 +252,113 @@ var dtLocal = {"passText":"To view this protected post, enter the password below
 
 	
 <!-- Contact Section -->
-<div class="contact-section w3-animate-opacity w3-padding-64 w3-center" style="background:linear-gradient(145deg,#000,#0a0a0a);box-shadow:inset 0 0 40px rgba(0,0,0,0.6);">
+<div class="contact-section w3-animate-opacity w3-padding-64 w3-center">
 
-  <h1 class="w3-text-white touch-hdr">Get in Touch</h1>
-  <div class="w3-center" style="margin:auto;width: 200px;height:4px;background:linear-gradient(to right,#f44336,#a00);border-radius:10px;margin-bottom:24px;"></div>
-  <p class="w3-large w3-text-light-grey">We’d love to hear from you! Please contact us below.</p>
+  <h1 class="w3-text-black touch-hdr">Get in Touch</h1>
+  <div class="section-divider"></div>
+  <p class="w3-large w3-text-black">We’d love to hear from you! Please contact us below.</p>
 
-  <div class="w3-row-padding w3-margin-top" style="max-width:1100px;margin:auto;">
+  <div class="w3-row-padding contact-row">
 
     <!-- Left Column: Address + Phone -->
     <div class="w3-third w3-padding-16">
-      <div class="w3-card-4 w3-round-large" style="background:linear-gradient(145deg,#141414,#1b1b1b);padding:32px;box-shadow:0 4px 15px rgba(0,0,0,0.5);">
-		<h3 class="findUs-msg w3-text-white w3-margin-bottom">Contact Info</h3>
+      <div class="contact-card-left w3-card-4 w3-round-large">
+        <h3 class="findUs-msg w3-text-white w3-margin-bottom">Contact Info</h3>
         <p class="w3-xlarge w3-text-red"><i class="fa fa-map-marker contact-icon"></i></p>
         <p class="w3-text-light-grey">93 Main Street<br>Andover, MA 01810</p>
-		 <p>
-      <a href="https://www.google.com/maps/dir/?api=1&destination=93+Main+Street,+Andover,+MA+01810" 
-         target="_blank" 
-         class="w3-button find-btn w3-round-large w3-hover-shadow">
-        Get Directions
-      </a>
-    </p>
-        <hr class="w3-border-dark-grey" style="margin:20px auto;width:60%;">
+        <p>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=93+Main+Street,+Andover,+MA+01810" 
+             target="_blank" 
+             class="w3-button find-btn w3-round-large w3-hover-shadow">
+            Get Directions
+          </a>
+        </p>
+        <hr class="section-divider-line">
         <p class="w3-xlarge w3-text-red"><i class="fa fa-phone contact-icon"></i></p>
         <p class="w3-text-light-grey">(978) 470-0320</p>
-        <hr class="w3-border-dark-grey" style="margin:20px auto;width:60%;">
+        <hr class="section-divider-line">
         <p class="w3-xlarge w3-text-red"><i class="fa fa-envelope contact-icon"></i></p>
-        <p><a href="mailto:info@dagsdeli.com" class="w3-text-white find-email">info@dagsdeli.com</a>
-		</p>
+        <p class="w3-text-white find-email">info@dagsdeli.com</p>
       </div>
     </div>
 
     <!-- Right Column: Contact Form -->
     <div class="w3-twothird w3-padding-16">
-  <div class="w3-card-4 w3-round-large" style="background:linear-gradient(145deg,#1b1b1b,#262626);padding:32px;box-shadow:0 4px 15px rgba(0,0,0,0.5);">
-    <h3 class="findUs-msg w3-margin-bottom">Send Us a Message</h3>
-    <form class="w3-container" action="/contact" method="post">
-      <p>
-        <input class="w3-input w3-border w3-round-large" type="text" placeholder="Name" required>
-      </p>
-      <p>
-        <input class="w3-input w3-border w3-round-large" type="email" placeholder="Email" required>
-      </p>
-      <p>
-        <textarea class="w3-input w3-border w3-round-large vertical-textarea" placeholder="Message" rows="5" required></textarea>
-      </p>
-      <p>
-        <button type="submit" class="w3-button w3-round-large w3-padding-large w3-block find-btn">
-          SEND MESSAGE
-        </button>
-      </p>
-    </form>
-    <p class="w3-small w3-text-grey w3-center w3-margin-top">
-      Protected by reCAPTCHA – <a href="https://policies.google.com/privacy" class="w3-text-light-grey">Privacy Policy</a> & 
-      <a href="https://policies.google.com/terms" class="w3-text-light-grey">Terms of Service</a>.
-    </p>
+      <div class="contact-card-right w3-card-4 w3-round-large">
+        <h3 class="findUs-msg w3-margin-bottom">Send Us a Message</h3>
+        <form class="w3-container" action="/contact" method="post">
+          <p>
+            <input class="w3-input w3-border w3-round-large" type="text" placeholder="Name" required>
+          </p>
+          <p>
+            <input class="w3-input w3-border w3-round-large" type="email" placeholder="Email" required>
+          </p>
+          <p>
+            <textarea class="w3-input w3-border w3-round-large vertical-textarea" placeholder="Message" rows="5" required></textarea>
+          </p>
+          <p>
+            <button type="submit" class="w3-button w3-round-large w3-padding-large w3-block find-btn">
+              SEND MESSAGE
+            </button>
+          </p>
+        </form>
+        <p class="w3-small w3-text-grey w3-center w3-margin-top">
+          Protected by reCAPTCHA – <a href="https://policies.google.com/privacy" class="w3-text-light-grey">Privacy Policy</a> & 
+          <a href="https://policies.google.com/terms" class="w3-text-light-grey">Terms of Service</a>.
+        </p>
+      </div>
+    </div>
+
   </div>
 </div>
-  </div>
-</div>
+
+
+	<footer class="w3-container w3-black w3-center w3-padding-32">
+      <p class="w3-small">
+        <a href="findUs.html">93 Main Street, Andover, MA 01810</a><br />
+        Open Monday–Saturday: 9AM – 6PM | Sunday: 9AM – 4PM<br />
+        Our Number: (978) 470-0320
+      </p>
+
+      <div class="w3-section">
+        <a
+          href="https://www.facebook.com/pages/DAgostinos-Deli-of-Andover/416085931884400"
+          class="w3-text-light-grey w3-hover-text-white"
+          >Facebook</a
+        >
+        |
+        <a
+          href="https://x.com/DagsDeli"
+          class="w3-text-light-grey w3-hover-text-white"
+          >Twitter</a
+        >
+        |
+        <a
+          href="https://www.instagram.com/dagsdeli/"
+          class="w3-text-light-grey w3-hover-text-white"
+          >Instagram</a
+        >
+        |
+        <a
+          href="https://www.yelp.com/writeareview/biz/t-h0KjoxE2f9zy1Nz3-zsw?return_url=%2Fbiz%2Ft-h0KjoxE2f9zy1Nz3-zsw"
+          class="w3-text-light-grey w3-hover-text-white"
+          >Yelp</a
+        >
+        |
+        <a
+          href="https://www.google.com/maps/place/D'Agostino's+Delicatessen+-+Andover,+MA/@42.6537923,-71.1414735,17z/data=!4m12!1m2!2m1!1sdeli!3m8!1s0x89e3088bf54d9489:0x4026fe1da08fb456!8m2!3d42.6537923!4d-71.1388986!9m1!1b1!15sCgRkZWxpWgYiBGRlbGmSAQRkZWxpmgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVVJsZVVsZk5WUm5FQUWqATcQASoIIgRkZWxpKAAyHxABIhuWjJbb_hlh7bgdb5AB3USLxgEAwgPAlL9XaRwyCBACIgRkZWxp4AEA-gEECBsQKA!16s%2Fg%2F11b76gm_3t?entry=ttu&g_ep=EgoyMDI1MTAyOS4yIKXMDSoASAFQAw%3D%3D"
+          class="w3-text-light-grey w3-hover-text-white"
+          >Google Reviews</a
+        >
+      </div>
+      <p class="w3-small">© 2025 D’Agostino’s Deli</p>
+    </footer>
 
 	
 	
-	<!-- !Footer -->
-	<footer id="footer" class="footer solid-bg">
-
-		
-			<div class="wf-wrap">
-				<div class="wf-container-footer">
-					<div class="wf-container">
-
-						<section id="text-2" class="widget widget_text wf-cell wf-1">			<div class="textwidget"><div class="footer-map">
- 
-
-		</section>
-					</div><!-- .wf-container -->
-				</div><!-- .wf-container-footer -->
-			</div><!-- .wf-wrap -->
-
-		
-<!-- !Bottom-bar -->
-<div id="bottom-bar" class="solid-bg" role="contentinfo">
-	<div class="wf-wrap">
-		<div class="wf-container-bottom">
-			<div class="wf-table wf-mobile-collapsed">
-
-				
-					<div class="wf-td">
-						<div class="wf-float-left">
-
-							Copyright@ 2020 D'Agostino's Deli - Andover, MA <br />
-<a href="https://www.google.com/maps/place/D'Agostino's/@42.6537962,-71.1410873,17z/data=!3m1!4b1!4m10!1m2!2m1!1sdeli!3m6!1s0x0:0x4026fe1da08fb456!8m2!3d42.6537911!4d-71.1388993!9m1!1b1" target="_BLANK"><picture style="height:94px;margin-top:10px;float:left;">
-<source type="image/webp" srcset="https://dagsdeli.com/wp-content/uploads/2017/01/dags_google_review-2.png.webp"/>
-<img src="https://dagsdeli.com/wp-content/uploads/2017/01/dags_google_review-2.png"/>
-</picture>
-</a><a href="https://www.yelp.com/writeareview/biz/t-h0KjoxE2f9zy1Nz3-zsw?return_url=%2Fbiz%2Ft-h0KjoxE2f9zy1Nz3-zsw" target="_BLANK"><picture style="height:94px;margin-left:15px;margin-top:10px;float:left;">
-<source type="image/webp" srcset="https://dagsdeli.com/wp-content/uploads/2017/01/dags_deli_review_yelp-388x188.png.webp"/>
-<img src="https://dagsdeli.com/wp-content/uploads/2017/01/dags_deli_review_yelp-388x188.png"/>
-</picture>
-
-
-
-						</div>
-					</div>
-
-				
-				<div class="wf-td">
-
-					
-				</div>
-
-				
-					<div class="wf-td bottom-text-block">
-
-						<div class="footer-right-side">
-<div style="text-align:center"><a target="_blank" href="http://groverwebdesign.com/" rel="nofollow"><picture style="width:100px">
-<source type="image/webp" srcset="https://dagsdeli.com/wp-content/uploads/2015/03/gwd-logo.png.webp"/>
-<img src="https://dagsdeli.com/wp-content/uploads/2015/03/gwd-logo.png"/>
-</picture>
-</a></div>
-</div>
-
-					</div>
-
-				
-			</div>
-		</div><!-- .wf-container-bottom -->
-	</div><!-- .wf-wrap -->
-</div><!-- #bottom-bar -->
-	</footer><!-- #footer -->
-
-
-
-	<a href="#" class="scroll-top"></a>
-<div style="overflow: hidden; bottom: 0; left: 0px; font-size: 1px; height: 3px; line-height: 3px; float: left;">powered by <a href="https://www.overthetopseo.com/">Over The Top SEO</a></div>
+<a href="#" class="scroll-top"></a>
+<div class="powered-by">
+    powered by <a href="https://www.overthetopseo.com/">Over The Top SEO</a>
 </div><!-- #page -->
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type='text/javascript' src='https://dagsdeli.com/wp-content/uploads/bb-plugin/cache/800-layout.js?ver=75e254cfd380cad04f717726041d99f1' id='fl-builder-layout-800-js'></script>
 <script type='text/javascript' src='https://dagsdeli.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9' id='regenerator-runtime-js'></script>
