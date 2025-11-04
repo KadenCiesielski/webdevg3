@@ -23,6 +23,18 @@ Michael: I used the pizza restaurant template from w3schols to give it a cleaner
          The menu is more organized and has a better presentation
          I made it easier to navigate between the different menu pages 
          I gave it a better HTML structure 
+Emily: 
+- Navigation bar/header
+    - Made navigation bar pinned to the top of the page so it is still visable while scrolling 
+    - Hamburger menu for mobile/smaller screen use
+    - Changed font to match the italian deli aestetic and cursive used in logo 
+    - When hovering color of block is lightened and text is brighter
+    - Chose to not have photo header above navigation bar to clean up website appearence and avoid cluttered look on screen when paired with images on pages
+- Footer
+    - Matches style of the header/navigation bar 
+    - Got rid of map layout and made it smaller to take up less of page to be more of a proper footer
+    - Still links address to find us page with number linked and links to socials (facebook, instagram, twitter) + reviews (google reviews + yelp)
+    - Used social links from orginal website 
 
 
 Project split:
