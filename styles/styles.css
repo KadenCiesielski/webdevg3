@@ -1237,47 +1237,6 @@ html {
   }
 }
 
-/* about.html css */
-
-.w3-large {
-  color: #ccc;
-}
-
-h1.about-txt {
-  font-family: "Amatic SC", sans-serif;
-  font-size: 100px;
-  text-align: center;
-  height: 200px;
-}
-
-h2.body-title {
-  font-family: "Amatic SC", sans-serif;
-  font-size: 80px;
-}
-
-.main-str {
-  width: 100%;
-  background-color: #000;
-}
-
-.line-spacing {
-  line-height: 1.6;
-}
-
-.bottom-hdr {
-  font-family: "Amatic SC", sans-serif;
-  font-size: 70px;
-}
-
-.aboutmenu-btn {
-  font-size: 20px;
-  padding: 16px 40px;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.aboutmenu-btn:hover {
-  transform: scale(0.95);
-}
 
 /* Heat N Serve Page Styles */
 .heat-serve-container {
@@ -1438,130 +1397,6 @@ a:hover .party-menu-button {
   text-decoration: none;
 }
 
-/* findUs.html css */
-
-.contact-section {
-  background: linear-gradient(145deg, #000, #0a0a0a);
-  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.6);
-  color: #f5f5f5;
-  padding: 60px 20px;
-  font-family: "Poppins", Arial, sans-serif;
-  line-height: 1.6;
-  text-align: center;
-}
-
-.touch-hdr {
-  font-family: "Amatic SC", sans-serif;
-  font-size: 70px;
-}
-
-.findUs-msg {
-  font-family: "Amatic SC", sans-serif;
-  font-size: 50px;
-  color: white;
-  margin-bottom: 24px;
-}
-
-/* Input Fields */
-.contact-section .w3-input,
-.contact-section .w3-textarea {
-  background: #ffffff;
-  border-color: #333;
-  color: #000; /* user-typed text */
-  border-radius: 12px;
-  padding: 12px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.contact-section .w3-input::placeholder,
-.contact-section .w3-textarea::placeholder {
-  color: #555; /* placeholder gray */
-  opacity: 1;
-}
-
-/* Cards */
-.w3-card-4 {
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-  padding: 32px;
-  border: 2px solid #f44336; /* red border */
-}
-
-.contact-section .w3-third .w3-card-4 {
-  background: linear-gradient(145deg, #141414, #1b1b1b);
-}
-
-.contact-section .w3-twothird .w3-card-4 {
-  background: linear-gradient(145deg, #1b1b1b, #262626);
-}
-
-/* Buttons */
-.find-btn {
-  background: linear-gradient(to right, #f44336, #a00);
-  color: #fff;
-  transition: 0.3s;
-  border-radius: 12px;
-  padding: 12px;
-  display: inline-block;
-  text-decoration: none;
-  text-align: center;
-  cursor: pointer;
-}
-
-.find-btn:hover {
-  transform: scale(0.95);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-}
-
-/* Horizontal line */
-.w3-border-dark-grey {
-  border-color: #444 !important;
-  margin: 20px auto;
-  width: 60%;
-}
-
-/* Text & Links */
-.w3-text-light-grey {
-  color: #ccc !important;
-}
-
-.w3-text-red {
-  color: #f44336 !important;
-}
-
-.w3-hover-text-white:hover {
-  color: #fff !important;
-}
-
-/* Centered gradient separator under headers */
-.contact-section .separator {
-  margin: auto;
-  width: 80px;
-  height: 4px;
-  background: linear-gradient(to right, #f44336, #a00);
-  border-radius: 10px;
-  margin-bottom: 24px;
-}
-
-.contact-icon {
-  color: #f44336;
-}
-
-/* Make the textarea only grow vertically */
-.vertical-textarea {
-  resize: vertical !important; /* only vertical resize */
-  overflow-x: hidden !important; /* hide horizontal scrollbar */
-  white-space: pre-wrap !important; /* wrap long lines */
-  word-wrap: break-word !important; /* break long words */
-  width: 100% !important; /* ensure width stays fixed */
-  box-sizing: border-box; /* include padding/border in width */
-}
-
-.find-email {
-  text-decoration: none;
-}
-
 header.w3-top {
   position: fixed !important;
   top: 0;
@@ -1712,122 +1547,6 @@ footer.w3-container.w3-black p.w3-small:last-of-type {
   opacity: 0.9 !important;
 }
 
-/* jobApp.html css */
-.page-title {
-  background-color: black !important;
-  min-height: 90px;
-}
-
-.jobApp-main {
-  background-color: black !important;
-}
-
-/* Make container full screen and center content */
-.full-screen-container {
-  display: flex;
-  justify-content: center; /* horizontal center */
-  align-items: center; /* vertical center */
-  min-height: 100vh; /* full screen height */
-  background-color: #000; /* black page background */
-}
-
-/* Inner form container */
-.application-container {
-  max-width: 900px;
-  width: 100%;
-  background-color: #1b1b1b; /* dark gray */
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
-  padding: 30px;
-  text-align: left;
-}
-
-/* Labels */
-.application-container h2,
-.application-container h4,
-.application-container h5,
-.application-container label,
-.application-container span.wpcf7-list-item-label {
-  color: #fff;
-}
-
-/* Inputs */
-.application-container input,
-.application-container textarea {
-  background-color: #111;
-  color: #fff;
-  border: 1px solid #444;
-  padding: 8px;
-  width: 100%;
-  box-sizing: border-box;
-  margin-bottom: 12px;
-}
-
-/* Input focus */
-.application-container input:focus,
-.application-container textarea:focus {
-  border-color: #0f0;
-  box-shadow: 0 0 6px #0f0;
-}
-
-.jobApp-title {
-  font-family: "Amatic SC", sans-serif;
-  font-size: 50px;
-}
-
-.job-ta {
-  color: white;
-}
-
-.job-ta::placeholder {
-  color: white !important;
-  opacity: 1 !important;
-}
-
-.job-ta2 {
-  color: white !important;
-}
-
-.job-ta2::placeholder {
-  color: white !important;
-  opacity: 1 !important;
-}
-
-.jobSubmit-btn {
-  transition: transform 0.3s ease; /* smooth animation */
-}
-
-.jobSubmit-btn:hover {
-  transform: scale(1.1); /* zoom in 10% */
-}
-
-.job-ta,
-.job-ta2 {
-  resize: vertical; /* Only vertical resizing allowed */
-  overflow-x: hidden; /* Hide horizontal scrollbar */
-}
-
-.wf-table {
-  height: 90px;
-}
-
-.company-logo {
-  max-width: 200px;
-  height: auto;
-}
-
-.first-name-col {
-  padding-right: 5px;
-}
-
-.middle-name-col {
-  padding-left: 2.5px;
-  padding-right: 2.5px;
-}
-
-.last-name-col {
-  padding-left: 5px;
-}
 
 /* =========================
    HOME PAGE STYLING
@@ -1952,4 +1671,424 @@ footer.w3-container.w3-black p.w3-small:last-of-type {
 .gallery-section img.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+
+/* about.html css */
+
+/* Fancy Header */
+.fancy-header {
+  background-color: #fefdfb;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("https://dagsdeli.com/wp-content/uploads/2016/07/Heatbg.png");
+  min-height: 300px;
+}
+
+.fancy-header .wf-table {
+  height: 300px;
+}
+
+.fancy-header .fancy-title {
+  color: #ffffff;
+}
+
+.breadcrumbs-custom {
+  color: #ffffff;
+}
+
+/* Main Section */
+.main-str {
+  padding: 32px; /* replaces w3-padding-large */
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 64px 0;
+}
+
+/* About Content Section */
+.about-section {
+  background-color: #fefdfb;
+  color: #000;
+}
+
+.about-section img {
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Paragraph spacing inside About */
+.line-spacing {
+  line-height: 1.6;
+}
+
+/* Call to Action Section */
+.cta-section {
+  background-color: #fefdfb;
+  color: #000;
+  padding: 64px 0;
+  border-radius: 8px;
+  margin-top: 32px;
+}
+
+.w3-large {
+  color: #000;
+}
+
+h1.about-txt {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 100px;
+  text-align: center;
+  height: 200px;
+}
+
+h2.body-title {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 80px;
+}
+
+.main-str {
+  width: 100%;
+  background-color: #fefdfb;
+}
+
+.line-spacing {
+  line-height: 1.6;
+}
+
+.bottom-hdr {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 70px;
+}
+
+.aboutmenu-btn {
+  font-size: 20px;
+  padding: 16px 40px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.aboutmenu-btn:hover {
+  transform: scale(0.95);
+}
+
+/* findUs.html css */
+
+/* Contact Section Background */
+.contact-section {
+  background: linear-gradient(145deg, #000, #0a0a0a);
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Section Divider */
+.section-divider {
+  margin: auto;
+  width: 200px;
+  height: 4px;
+  background: linear-gradient(to right, #f44336, #a00);
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.contact-row {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Left Card */
+.contact-card-left {
+  background: linear-gradient(145deg, #141414, #1b1b1b);
+  padding: 32px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Right Card */
+.contact-card-right {
+  background: linear-gradient(145deg, #1b1b1b, #262626);
+  padding: 32px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Divider Line in Cards */
+.section-divider-line {
+  margin: 20px auto;
+  width: 60%;
+}
+
+/* Optional: Contact icon size */
+.contact-icon {
+  font-size: 36px;
+}
+
+/* Textarea Vertical Scroll Only */
+.vertical-textarea {
+  resize: vertical;
+}
+
+/* Review Logos */
+.review-logo {
+  height: 94px;
+  margin-top: 10px;
+  float: left;
+}
+
+.review-logo + .review-logo {
+  margin-left: 15px; /* spacing between logos */
+}
+
+/* GWD logo */
+.gwd-logo {
+  width: 100px;
+  display: block;
+  margin: 0 auto; /* center it */
+}
+
+/* Scroll top hidden */
+.scroll-top {
+  display: none;
+}
+
+/* Powered by hidden */
+.powered-by {
+  display: none;
+}
+
+.contact-section {
+  background: #fefdfb;
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.6);
+  color: #f5f5f5;
+  padding: 60px 20px;
+  font-family: "Poppins", Arial, sans-serif;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.touch-hdr {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 70px;
+}
+
+.findUs-msg {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 50px;
+  color: white;
+  margin-bottom: 24px;
+}
+
+/* Input Fields */
+.contact-section .w3-input,
+.contact-section .w3-textarea {
+  background: #ffffff;
+  border-color: #333;
+  color: #000; /* user-typed text */
+  border-radius: 12px;
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-section .w3-input::placeholder,
+.contact-section .w3-textarea::placeholder {
+  color: #555; /* placeholder gray */
+  opacity: 1;
+}
+
+/* Cards */
+.w3-card-4 {
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  padding: 32px;
+  border: 2px solid #f44336; /* red border */
+}
+
+.contact-section .w3-third .w3-card-4 {
+  background: linear-gradient(145deg, #141414, #1b1b1b);
+}
+
+.contact-section .w3-twothird .w3-card-4 {
+  background: linear-gradient(145deg, #1b1b1b, #262626);
+}
+
+/* Buttons */
+.find-btn {
+  background: linear-gradient(to right, #f44336, #a00);
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 12px;
+  padding: 12px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.find-btn:hover {
+  transform: scale(0.95);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Horizontal line */
+.w3-border-dark-grey {
+  border-color: #444 !important;
+  margin: 20px auto;
+  width: 60%;
+}
+
+/* Text & Links */
+.w3-text-light-grey {
+  color: #ccc !important;
+}
+
+.w3-text-red {
+  color: #f44336 !important;
+}
+
+.w3-hover-text-white:hover {
+  color: #fff !important;
+}
+
+/* Centered gradient separator under headers */
+.contact-section .separator {
+  margin: auto;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, #f44336, #a00);
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.contact-icon {
+  color: #f44336;
+}
+
+/* Make the textarea only grow vertically */
+.vertical-textarea {
+  resize: vertical !important; /* only vertical resize */
+  overflow-x: hidden !important; /* hide horizontal scrollbar */
+  white-space: pre-wrap !important; /* wrap long lines */
+  word-wrap: break-word !important; /* break long words */
+  width: 100% !important; /* ensure width stays fixed */
+  box-sizing: border-box; /* include padding/border in width */
+}
+
+.find-email {
+  text-decoration: none;
+}
+
+/* jobApp.html css */
+.page-title {
+  background-color: white !important;
+  min-height: 90px;
+}
+
+.jobApp-main {
+  background-color: white !important;
+}
+
+/* Make container full screen and center content */
+.full-screen-container {
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center; /* vertical center */
+  min-height: 100vh; /* full screen height */
+  background-color: #fff; /* black page background */
+}
+
+/* Inner form container */
+.application-container {
+  max-width: 900px;
+  width: 100%;
+  background-color: #1b1b1b; /* dark gray */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 30px;
+  text-align: left;
+}
+
+/* Labels */
+.application-container h2,
+.application-container h4,
+.application-container h5,
+.application-container label,
+.application-container span.wpcf7-list-item-label {
+  color: #fff;
+}
+
+/* Inputs */
+.application-container input,
+.application-container textarea {
+  background-color: #111;
+  color: #fff;
+  border: 1px solid #444;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+}
+
+/* Input focus */
+.application-container input:focus,
+.application-container textarea:focus {
+  border-color: #0f0;
+  box-shadow: 0 0 6px #0f0;
+}
+
+.jobApp-title {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 50px;
+}
+
+.job-ta {
+  color: white;
+}
+
+.job-ta::placeholder {
+  color: white !important;
+  opacity: 1 !important;
+}
+
+.job-ta2 {
+  color: white !important;
+}
+
+.job-ta2::placeholder {
+  color: white !important;
+  opacity: 1 !important;
+}
+
+.jobSubmit-btn {
+  transition: transform 0.3s ease; /* smooth animation */
+}
+
+.jobSubmit-btn:hover {
+  transform: scale(1.1); /* zoom in 10% */
+}
+
+.job-ta,
+.job-ta2 {
+  resize: vertical; /* Only vertical resizing allowed */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.wf-table {
+  height: 90px;
+}
+
+.company-logo {
+  max-width: 200px;
+  height: auto;
+}
+
+.first-name-col {
+  padding-right: 5px;
+}
+
+.middle-name-col {
+  padding-left: 2.5px;
+  padding-right: 2.5px;
+}
+
+.last-name-col {
+  padding-left: 5px;
 }
