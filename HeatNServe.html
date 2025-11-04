@@ -11,116 +11,41 @@
     />
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
-  <body>
-    <!-- Navbar (sit on top) -->
-    <div class="w3-top w3-hide-small">
-      <div
-        class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off"
-        id="myNavbar"
-        style="display: flex; justify-content: center"
-      >
-        <a
-          href="index.html"
-          class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
-          >Home</a
+    <header class="w3-top">
+      <div class="w3-bar w3-black w3-padding w3-card">
+        <a href="index.html" class="w3-bar-item w3-button w3-wide"
+          >D’Agostino’s Deli</a
         >
+        <div class="w3-right w3-hide-small">
+          <a href="index.html" class="w3-bar-item w3-button">Home</a>
+          <a href="about.html" class="w3-bar-item w3-button">About</a>
+          <a href="menus.html" class="w3-bar-item w3-button">Menus</a>
+          <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+          <a href="findUs.html" class="w3-bar-item w3-button">Find Us</a>
+          <a href="jobApp.html" class="w3-bar-item w3-button"
+            >Apply for a Job</a
+          >
+        </div>
         <a
-          href="about.html"
-          class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
-          >About</a
+          href="javascript:void(0)"
+          class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+          onclick="toggleMenu()"
         >
-        <a
-          href="menus.html"
-          class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
-          >Menus</a
-        >
-        <a
-          href="gallery.html"
-          class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
-          >Gallery</a
-        >
-        <a
-          href="contact.html"
-          class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
-          >Contact</a
-        >
-        <a
-          href="findus.html"
-          class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
-          >Find Us</a
-        >
-        <a
-          href="apply.html"
-          class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
-          >Apply For A Job</a
-        >
+          &#9776;
+        </a>
       </div>
-    </div>
-
-    <!-- Hamburger Toggle Button (mobile only) -->
-    <button
-      class="menu-toggle"
-      aria-controls="smallMenu"
-      aria-expanded="false"
-      onclick="toggleMenu()"
-      style="position: fixed; top: 12px; left: 18px; z-index: 1001"
-    >
-      <span class="hamburger-icon"></span>
-      <span class="hamburger-icon"></span>
-      <span class="hamburger-icon"></span>
-    </button>
-    <!-- Collapsible Mobile Menu -->
-    <div
-      id="smallMenu"
-      class="w3-bar-block w3-light-gray w3-hide w3-hide-medium w3-hide-large w3-center"
-      aria-hidden="true"
-      style="
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        z-index: 1000;
-        overflow-y: auto;
-        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.13);
-      "
-    >
-      <a
-        href="index.html"
-        class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
-        >Home</a
+      <div
+        id="navMenu"
+        class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium"
       >
-      <a
-        href="about.html"
-        class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
-        >About</a
-      >
-      <a
-        href="menus.html"
-        class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
-        >Menus</a
-      >
-      <a
-        href="gallery.html"
-        class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
-        >Gallery</a
-      >
-      <a
-        href="contact.html"
-        class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
-        >Contact</a
-      >
-      <a
-        href="findus.html"
-        class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
-        >Find Us</a
-      >
-      <a
-        href="apply.html"
-        class="w3-bar-item w3-button w3-border w3-border-blue w3-round-large x-margin-small"
-        >Apply For A Job</a
-      >
-    </div>
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="about.html" class="w3-bar-item w3-button">About</a>
+        <a href="menus.html" class="w3-bar-item w3-button">Menus</a>
+        <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+        <a href="findUs.html" class="w3-bar-item w3-button">Find Us</a>
+        <a href="jobApp.html" class="w3-bar-item w3-button">Apply for a Job</a>
+      </div>
+    </header>
     <!-- Header with image -->
     <header class="bgimg w3-display-container w3-grayscale-min" id="home">
       <div class="w3-display-middle w3-center">
@@ -352,8 +277,46 @@
       </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="w3-center w3-black w3-padding-48 w3-xxlarge"></footer>
+    <footer class="w3-container w3-black w3-center w3-padding-32">
+      <p class="w3-small">
+        <a href="findUs.html">93 Main Street, Andover, MA 01810</a><br />
+        Open Monday–Saturday: 9AM – 6PM | Sunday: 9AM – 4PM<br />
+        Our Number: (978) 470-0320
+      </p>
+
+      <div class="w3-section">
+        <a
+          href="https://www.facebook.com/pages/DAgostinos-Deli-of-Andover/416085931884400"
+          class="w3-text-light-grey w3-hover-text-white"
+          >Facebook</a
+        >
+        |
+        <a
+          href="https://x.com/DagsDeli"
+          class="w3-text-light-grey w3-hover-text-white"
+          >Twitter</a
+        >
+        |
+        <a
+          href="https://www.instagram.com/dagsdeli/"
+          class="w3-text-light-grey w3-hover-text-white"
+          >Instagram</a
+        >
+        |
+        <a
+          href="https://www.yelp.com/writeareview/biz/t-h0KjoxE2f9zy1Nz3-zsw?return_url=%2Fbiz%2Ft-h0KjoxE2f9zy1Nz3-zsw"
+          class="w3-text-light-grey w3-hover-text-white"
+          >Yelp</a
+        >
+        |
+        <a
+          href="https://www.google.com/maps/place/D'Agostino's+Delicatessen+-+Andover,+MA/@42.6537923,-71.1414735,17z/data=!4m12!1m2!2m1!1sdeli!3m8!1s0x89e3088bf54d9489:0x4026fe1da08fb456!8m2!3d42.6537923!4d-71.1388986!9m1!1b1!15sCgRkZWxpWgYiBGRlbGmSAQRkZWxpmgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVVJsZVVsZk5WUm5FQUWqATcQASoIIgRkZWxpKAAyHxABIhuWjJbb_hlh7bgdb5AB3USLxgEAwgPAlL9XaRwyCBACIgRkZWxp4AEA-gEECBsQKA!16s%2Fg%2F11b76gm_3t?entry=ttu&g_ep=EgoyMDI1MTAyOS4yIKXMDSoASAFQAw%3D%3D"
+          class="w3-text-light-grey w3-hover-text-white"
+          >Google Reviews</a
+        >
+      </div>
+      <p class="w3-small">© 2025 D’Agostino’s Deli</p>
+    </footer>
 
     <script src="scripts/scripts.js"></script>
   </body>
