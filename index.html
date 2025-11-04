@@ -9,17 +9,117 @@
   </head>
   <body>
     <header class="w3-top">
-
+      <div class="w3-bar w3-black w3-padding w3-card">
+        <a href="index.html" class="w3-bar-item w3-button w3-wide"
+          >D’Agostino’s Deli</a
+        >
+        <div class="w3-right w3-hide-small">
+          <a href="index.html" class="w3-bar-item w3-button">Home</a>
+          <a href="about.html" class="w3-bar-item w3-button">About</a>
+          <a href="menus.html" class="w3-bar-item w3-button">Menus</a>
+          <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+          <a href="findUs.html" class="w3-bar-item w3-button">Find Us</a>
+          <a href="jobApp.html" class="w3-bar-item w3-button"
+            >Apply for a Job</a
+          >
+        </div>
+        <a
+          href="javascript:void(0)"
+          class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+          onclick="toggleMenu()"
+        >
+          &#9776;
+        </a>
+      </div>
+      <div
+        id="navMenu"
+        class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium"
+      >
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="about.html" class="w3-bar-item w3-button">About</a>
+        <a href="menus.html" class="w3-bar-item w3-button">Menus</a>
+        <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+        <a href="findUs.html" class="w3-bar-item w3-button">Find Us</a>
+        <a href="jobApp.html" class="w3-bar-item w3-button">Apply for a Job</a>
+      </div>
     </header>
 
     <main class="w3-container site-main">
-        
+      <section class="w3-row w3-padding-64 home-section fade-section">
+        <div class="w3-half w3-padding-large text-side">
+          <h2 class="section-title">About — D’Agostino’s Deli</h2>
+          <p class="section-body">
+            D’Agostino’s Delicatessen of Andover, Massachusetts, is a family
+            owned business, operated by Andover residents, Paul Sr., Lisa, and
+            Nicholas D’Agostino. Please don’t hesitate to ask for us by name,
+            and we look forward to providing downtown Andover with yet another
+            great food establishment!
+          </p>
+        </div>
+        <div class="w3-half w3-padding-large image-side">
+          <img
+            src="assets/plate.png"
+            alt="Plate of Deli food"
+            class="section-image"
+          />
+        </div>
+      </section>
+
+      <section class="w3-row w3-padding-64 home-section fade-section">
+        <div class="w3-half w3-padding-large image-side">
+          <img
+            src="assets/sandDrink.png"
+            alt="Sandwich and drink"
+            class="section-image"
+          />
+        </div>
+        <div class="w3-half w3-padding-large text-side">
+          <h2 class="section-title">Our Reviews</h2>
+          <p class="section-body">
+            “Best subs in New England. Family run deli with great service,
+            fabulous sandwiches and subs and even a small market for picking up
+            chips, pasta and a few grocery items. Also great salads, cheese,
+            desserts and drinks. Always busy so the food is super fresh. A town
+            staple!!”<br />
+            <span class="review-author">– Anne G.</span>
+          </p>
+          <p class="section-body">
+            “D'Agostino's has the best subs and cold cuts in the area for sure.
+            They also have a ton of catering options, great for grad parties or
+            holiday celebrations. The service is always quick, even when the
+            place is packed. Employees are always polite. Great place all
+            around.”<br />
+            <span class="review-author">– Rosie K.</span>
+          </p>
+        </div>
+      </section>
+
+      <section class="w3-row w3-padding-64 home-section fade-section">
+        <div class="w3-half w3-padding-large text-side">
+          <h2 class="section-title">About — Our Family</h2>
+          <p class="section-body">
+            The original D’Agostino’s was founded in Winchester, in 1968, by
+            Samuel R. D’Agostino. The family then proceeded to open additional
+            locations, in Arlington Heights (1981), and East Arlington
+            (1987).<br /><br />
+            After 35+ years in the food industry, Paul Sr. elected to amicably
+            part ways with the business he helped establish with his father and
+            brothers.
+          </p>
+          <a href="about.html" class="w3-button learn-more-btn">Learn More</a>
+        </div>
+        <div class="w3-half w3-padding-large image-side">
+          <img
+            src="assets/sandwich.png"
+            alt="Delicious sandwich"
+            class="section-image"
+          />
+        </div>
+      </section>
     </main>
 
     <footer class="w3-container w3-center w3-padding-24">
-      <p>
-
-      </p>
+      <!-- FOOTER CONTENT (filled in later) -->
     </footer>
 
     <script src="scripts/scripts.js"></script>
