@@ -100,7 +100,7 @@ function toggleMenu() {
 
 // Fade-in animation for sections when they scroll into view
 document.addEventListener("DOMContentLoaded", () => {
-  const fadeSections = document.querySelectorAll(".fade-section");
+  const fadeSections = document.querySelectorAll(".fade-section, .gallery-section img");
 
   const observer = new IntersectionObserver(
     entries => {

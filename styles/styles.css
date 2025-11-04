@@ -1759,14 +1759,14 @@ header .w3-bar *,
 
 .section-title {
   font-family: "Brush Script MT", cursive;
-  font-size: 2.2rem;
+  font-size: 3rem;
   font-weight: bold;
   color: #222;
   margin-bottom: 1rem;
 }
 
 .section-body {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   line-height: 1.6;
   color: #333;
 }
@@ -1787,7 +1787,7 @@ header .w3-bar *,
   display: block;
   margin-top: 0.5rem;
   font-style: italic;
-  color: #777;
+  color: #ffffff;
 }
 
 .learn-more-btn {
@@ -1823,14 +1823,43 @@ header .w3-bar *,
    FADE-IN SCROLL ANIMATION
    ========================= */
 
-   .fade-section {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 1s ease, transform 1s ease;
-  }
-  
-  .fade-section.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
+.fade-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================
+   HOME REVIEWS SECTION
+   ========================= */
+.reviews-section {
+  background-color: #8b0000; /* deep red */
+  color: #fff; /* white text for contrast */
+}
+
+.reviews-section .section-title {
+  color: #fff;
+}
+
+.reviews-section .section-body {
+  color: #f8f8f8;
+}
+
+/* =========================
+     FADE-IN FOR GALLERY IMAGES
+   ========================= */
+.gallery-section img {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.gallery-section img.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
