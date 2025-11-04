@@ -6,9 +6,12 @@ webdevg3.vercel.app
 
 
 Improvements: 
+Kaden:
 Home and gallery pages now utilize a fade in for improved visuals
 Images are now viewable in gallery and can be enlarged within the page
 Overall general improvement to presentation and readability
+Use of w3.css styles
+Use of JavaScript
 
 Michael: 
 - Menu
