@@ -819,121 +819,42 @@
     <div id="page">
       <!-- left, center, classic, side -->
 
-      <!-- !Header -->
-      <header
-        id="header"
-        class="solid-bg show-device-logo show-mobile-logo dt-parent-menu-clickable logo-center"
-        role="banner"
-      >
-        <!-- class="overlap"; class="logo-left", class="logo-center", class="logo-classic" -->
-
-        <!-- !Top-bar -->
-        <div
-          id="top-bar"
-          role="complementary"
-          class="text-normal solid-bg top-bar-empty"
+      <header class="w3-top">
+      <div class="w3-bar w3-black w3-padding w3-card">
+        <a href="index.html" class="w3-bar-item w3-button w3-wide"
+          >D’Agostino’s Deli</a
         >
-          <div class="wf-wrap">
-            <div class="wf-container-top">
-              <div class="wf-table wf-mobile-collapsed">
-                <div class="mail-right">
-                  <span class="mini-contacts email"
-                    ><a
-                      href="/cdn-cgi/l/email-protection#422b2c242d022623253126272e2b6c212d2f"
-                      target="_blank"
-                      ><span
-                        class="__cf_email__"
-                        data-cfemail="1c75727a735c787d7b6f78797075327f7371"
-                        >[email&#160;protected]</span
-                      ></a
-                    ></span
-                  >
-                </div>
-              </div>
-              <!-- .wf-table -->
-            </div>
-            <!-- .wf-container-top -->
-          </div>
-          <!-- .wf-wrap -->
+        <div class="w3-right w3-hide-small">
+          <a href="index.html" class="w3-bar-item w3-button">Home</a>
+          <a href="about.html" class="w3-bar-item w3-button">About</a>
+          <a href="menus.html" class="w3-bar-item w3-button">Menus</a>
+          <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+          <a href="findUs.html" class="w3-bar-item w3-button">Find Us</a>
+          <a href="jobApp.html" class="w3-bar-item w3-button"
+            >Apply for a Job</a
+          >
         </div>
-        <!-- #top-bar -->
-
-        <div class="wf-wrap">
-          <div class="wf-table">
-            <div class="wf-td">
-              <!-- !- Branding -->
-              <div id="branding" class="wf-td">
-                <a href="https://dagsdeli.com/"
-                  ><img
-                    class="preload-me"
-                    srcset="
-                      https://dagsdeli.com/wp-content/uploads/2016/08/mobile-logo-new.png 1x,
-                      https://dagsdeli.com/wp-content/uploads/2016/08/mobile-logo-new.png 2x
-                    "
-                    width="602"
-                    height="164"
-                    alt="D&#039;Agostino&#039;s Delicatessen Andover" /><img
-                    class="mobile-logo preload-me"
-                    srcset="
-                      https://dagsdeli.com/wp-content/uploads/2016/07/M-logo-new.png 1x,
-                      https://dagsdeli.com/wp-content/uploads/2016/07/M-logo-new.png 2x
-                    "
-                    width="314"
-                    height="83"
-                    alt="D&#039;Agostino&#039;s Delicatessen Andover"
-                /></a>
-                <div id="site-title" class="assistive-text">
-                  D&#039;Agostino&#039;s Delicatessen Andover
-                </div>
-                <div id="site-description" class="assistive-text">
-                  Classic Italian-American Delicatessens &amp; Sandwich Shop
-                </div>
-              </div>
-            </div>
-            <!-- .wf-td -->
-          </div>
-          <!-- .wf-table -->
-        </div>
-        <!-- .wf-wrap -->
-        <div class="navigation-holder">
-          <div class="wf-wrap">
-            <!-- !- Navigation -->
-          	<nav class="w3-top w3-card">
-  <div class="w3-bar w3-black w3-wide w3-padding-0">
-    <a href="index.html" class="w3-bar-item w3-button w3-wide">D’Agostino’s Deli</a>
-
-    <div class="w3-right w3-hide-small">
-      <a href="index.html" class="w3-bar-item w3-button">Home</a>
-      <a href="about.html" class="w3-bar-item w3-button">About</a>
-      <a href="menus.html" class="w3-bar-item w3-button">Menus</a>
-      <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
-      <a href="findUs.html" class="w3-bar-item w3-button">Find Us</a>
-      <a href="jobApp.html" class="w3-bar-item w3-button">Apply for a Job</a>
-    </div>
-
-    <!-- Hamburger for small screens -->
-    <a href="javascript:void(0)"
-       class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
-       onclick="toggleMenu()">
-      &#9776;
-    </a>
-  </div>
-
-  <div id="navMenu" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
-    <a href="index.html" class="w3-bar-item w3-button">Home</a>
-    <a href="about.html" class="w3-bar-item w3-button">About</a>
-    <a href="menus.html" class="w3-bar-item w3-button">Menus</a>
-    <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
-    <a href="findUs.html" class="w3-bar-item w3-button">Find Us</a>
-    <a href="jobApp.html" class="w3-bar-item w3-button">Apply for a Job</a>
-  </div>
-</nav>
-          </div>
-          <!-- .wf-wrap -->
-        </div>
-        <!-- .navigation-holder -->
-        <div class="nav-bottom-img"></div>
-      </header>
+        <a
+          href="javascript:void(0)"
+          class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+          onclick="toggleMenu()"
+        >
+          &#9776;
+        </a>
+      </div>
+      <div
+        id="navMenu"
+        class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium"
+      >
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="about.html" class="w3-bar-item w3-button">About</a>
+        <a href="menus.html" class="w3-bar-item w3-button">Menus</a>
+        <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+        <a href="findUs.html" class="w3-bar-item w3-button">Find Us</a>
+        <a href="jobApp.html" class="w3-bar-item w3-button">Apply for a Job</a>
+      </div>
+    </header>
+    
       <!-- #masthead -->
       <div class="ribbon"></div>
 
@@ -1053,11 +974,11 @@
 	
     </div>
 
-	<footer class="w3-container w3-black w3-center w3-padding-32">
+	  <footer class="w3-container w3-black w3-center w3-padding-32">
       <p class="w3-small">
         <a href="findUs.html">93 Main Street, Andover, MA 01810</a><br />
         Open Monday–Saturday: 9AM – 6PM | Sunday: 9AM – 4PM<br />
-        Our Number: (978) 470-0320
+        Call us: <a href="tel:9784700320">(978)470-0320</a><br />
       </p>
 
       <div class="w3-section">
@@ -1093,7 +1014,7 @@
       </div>
       <p class="w3-small">© 2025 D’Agostino’s Deli</p>
     </footer>
-
+    
     <!-- #page -->
     <script
       data-cfasync="false"
