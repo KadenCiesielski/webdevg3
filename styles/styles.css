@@ -1621,3 +1621,121 @@ header .w3-bar *,
 #navMenu * {
   box-shadow: none;
 }
+
+/* jobApp.html css */
+.page-title {
+  background-color: black !important;
+  min-height: 90px;
+}
+
+.jobApp-main {
+  background-color: black !important;
+}
+
+/* Make container full screen and center content */
+.full-screen-container {
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center; /* vertical center */
+  min-height: 100vh; /* full screen height */
+  background-color: #000; /* black page background */
+}
+
+/* Inner form container */
+.application-container {
+  max-width: 900px;
+  width: 100%;
+  background-color: #1b1b1b; /* dark gray */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 30px;
+  text-align: left;
+}
+
+/* Labels */
+.application-container h2,
+.application-container h4,
+.application-container h5,
+.application-container label,
+.application-container span.wpcf7-list-item-label {
+  color: #fff;
+}
+
+/* Inputs */
+.application-container input,
+.application-container textarea {
+  background-color: #111;
+  color: #fff;
+  border: 1px solid #444;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+}
+
+/* Input focus */
+.application-container input:focus,
+.application-container textarea:focus {
+  border-color: #0f0;
+  box-shadow: 0 0 6px #0f0;
+}
+
+.jobApp-title {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 50px;
+}
+
+.job-ta {
+  color: white;
+}
+
+.job-ta::placeholder {
+  color: white !important;
+  opacity: 1 !important;
+}
+
+.job-ta2 {
+  color: white !important;
+}
+
+.job-ta2::placeholder {
+  color: white !important;
+  opacity: 1 !important;
+}
+
+.jobSubmit-btn {
+  transition: transform 0.3s ease; /* smooth animation */
+}
+
+.jobSubmit-btn:hover {
+  transform: scale(1.1); /* zoom in 10% */
+}
+
+.job-ta,
+.job-ta2 {
+  resize: vertical; /* Only vertical resizing allowed */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.wf-table {
+  height: 90px;
+}
+
+.company-logo {
+  max-width: 200px;
+  height: auto;
+}
+
+.first-name-col {
+  padding-right: 5px;
+}
+
+.middle-name-col {
+  padding-left: 2.5px;
+  padding-right: 2.5px;
+}
+
+.last-name-col {
+  padding-left: 5px;
+}
+
