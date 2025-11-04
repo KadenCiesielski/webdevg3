@@ -1561,3 +1561,63 @@ a:hover .party-menu-button {
 .find-email {
   text-decoration: none;
 }
+
+header.w3-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+header .w3-bar {
+  background-color: #000;
+  padding: 0.5rem 1rem;
+  box-shadow: none;
+}
+
+header .w3-bar-item.w3-wide {
+  font-family: "Amatic SC", cursive;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #f0f0f0;
+}
+
+header .w3-bar .w3-bar-item.w3-button {
+  font-family: "Amatic SC", cursive;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #f0f0f0;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+  padding: 12px 20px;
+}
+
+header .w3-bar .w3-bar-item.w3-button:hover,
+header .w3-bar .w3-bar-item.w3-button:focus {
+  background-color: #111;
+  color: #fff;
+}
+
+header .w3-right {
+  display: inline-block;
+}
+
+#navMenu.w3-bar-block {
+  background-color: #000;
+}
+#navMenu .w3-bar-item.w3-button {
+  font-family: "Amatic SC", cursive;
+  font-size: 20px;
+  color: #f0f0f0;
+  padding: 12px 16px;
+}
+#navMenu .w3-bar-item.w3-button:hover {
+  background-color: #111;
+}
+
+header .w3-bar *,
+#navMenu * {
+  box-shadow: none;
+}
