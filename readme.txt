@@ -4,7 +4,12 @@ https://dagsdeli.com/
 New site:
 webdevg3.vercel.app (still need to deploy)
 
+
 Improvements: 
+Home and gallery pages now utilize a fade in for improved visuals
+Images are now viewable in gallery and can be enlarged within the page
+Overall general improvement to presentation and readability
+
 Michael: I used the pizza restaurant template from w3schols to give it a cleaner look
          I gave it a more modern design
          I improved the fonts and spacing to make it more readable
@@ -21,7 +26,7 @@ Michael: I used the pizza restaurant template from w3schols to give it a cleaner
 
 
 Project split:
-Kaden: Home, Gallery (i'll setup the phone number on home page instead of its own tab)
+Kaden: Home, Gallery
 Emily: Header and footer/nav bar
 Jacob: About, Find us, Apply for job
-Michael: Menus
+Michael: Menus pages
