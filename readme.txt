@@ -23,7 +23,7 @@ Michael: I used the pizza restaurant template from w3schols to give it a cleaner
          The menu is more organized and has a better presentation
          I made it easier to navigate between the different menu pages 
          I gave it a better HTML structure 
-Emily: 
+Emily: code written on gallery page to be copied by group members 
 - Navigation bar/header
     - Made navigation bar pinned to the top of the page so it is still visable while scrolling 
     - Hamburger menu for mobile/smaller screen use
